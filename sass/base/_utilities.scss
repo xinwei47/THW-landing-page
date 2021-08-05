@@ -1,0 +1,8 @@
+.center-element {
+    text-align: center;
+}
+
+// add space between paragraphs
+p + p {
+    margin-top: $margin-sm;
+}
