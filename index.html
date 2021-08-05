@@ -8,12 +8,114 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>THW Landing Page</h1>
+    <div class="announcement">
+        <div class="announcement__text"><a href="#popup" class="announcement__link">Click for COVID-19 updates.</a>
+        </div>
+        <a class="announcement__close">
+            <i class="close-btn fas fa-times"></i>
+        </a>
+    </div>
 
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <a href="#" class="popup__close"><i class="close-btn fas fa-times"></i></a>
+            <h3 class="popup__heading heading--2">COVID-19 Travel Updates</h3>
+            <p class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur
+                architecto, quo neque dolor exercitationem quis ut dolores eligendi rem officiis ullam quidem
+                expedita vitae incidunt excepturi, obcaecati libero qui? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ex voluptatibus numquam harum iure, quaerat molestiae expedita iste ducimus
+                provident quisquam.</p>
+            <p class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur
+                architecto, quo neque dolor exercitationem quis ut dolores eligendi rem officiis ullam quidem
+                expedita vitae incidunt excepturi, obcaecati libero qui? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ex voluptatibus numquam harum iure, quaerat molestiae expedita iste ducimus
+                provident quisquam. Unde cupiditate aliquid eaque fuga esse dolores quo facilis alias. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Veniam necessitatibus vitae adipisci sequi
+                perspiciatis commodi dolores cum eum ducimus, alias in recusandae inventore labore non et facere ex
+                ut accusamus.</p>
+            <div class="popup__btn-container">
+                <a href="#" class="popup__btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="navigation">
+            <div class="navigation__logo-box">
+                <img src="/media/logo.png" alt="company logo" class="navigation__logo">
+            </div>
+            <!-- <nav class="navigation__nav"> -->
+            <ul class="navigation__main">
+                <li class="navigation__item"><a href="#" class="navigation__link">Adventures</a>
+                </li>
+                <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Resources</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+            </ul>
+            <ul class="navigation__sub">
+                <li class="navigation__item"><a href="#" class="navigation__link"><i
+                            class="navigation__icon fas fa-user"></i></a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><i
+                            class="navigation__icon fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+
+        <header class="header">
+            <div class="header__video-container">
+                <video class="header__video-content" autoplay muted loop>
+                    <source src="/media/header-video-1.mp4" type="video/mp4">
+                    <!-- Sorry, your browser doesn't support embedded videos. -->
+                    <img src="/media/header-image-1.jpg" alt="Sorry, your browser doesn't support embedded videos.">
+                </video>
+            </div>
+
+            <div class="header__text">
+                <h1 class="header__title heading--1">Find Your Tribe.<br>Push Your Limit.</h1>
+                <h2 class="header__subtitle heading--2">We bring <mark class="text-highlight--1">like-minded
+                        women</mark> together and take them on unique <mark class="text-highlight--1">outdoor
+                        excursions</mark> to<mark class="text-highlight--1">bucket-list</mark> destinations.</h2>
+            </div>
+        </header>
+
+        <section class="section-destinations">
+            Destinations
+        </section>
+
+        <section class="section-demo">
+            Demographics
+        </section>
+
+        <section class="section-blog">
+            Blog
+        </section>
+
+        <section class="section-features">
+            Features
+        </section>
+
+        <section class="section-newsletter">
+            Newsletter
+        </section>
+
+        <section class="section-gallery">
+            Gallery
+        </section>
+
+
+        <footer class="footer">
+            Footer
+        </footer>
+
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

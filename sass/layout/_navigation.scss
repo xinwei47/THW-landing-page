@@ -1,0 +1,42 @@
+.navigation {
+    padding: 2rem 0;
+    grid-column: center-start / center-end;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        display: block;
+        height: 4rem;
+    }
+
+    &__main,
+    &__sub {
+        list-style: none;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__link {
+        &:link, //hasn't been visited
+        &:visited,
+        &:active {
+            text-decoration: none;
+            font-weight: 600;
+            color: $color-font-dark;
+        }
+    }
+
+    &__icon {
+        fill: $color-font-dark;
+        font-size: 2rem;
+    }
+}

@@ -4,9 +4,12 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/button";
 @import "components/card";
 @import "components/gallery";
+@import "components/popup";
 
+@import "layout/announcement";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";

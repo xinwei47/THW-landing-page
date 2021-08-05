@@ -1,0 +1,35 @@
+.section-destinations {
+    background-color: burlywood;
+
+    grid-column: center-start / center-end;
+}
+
+.section-demo {
+    background-color: cadetblue;
+
+    grid-column: center-start / center-end;
+}
+
+.section-blog {
+    background-color: cornflowerblue;
+
+    grid-column: full-start / full-end;
+}
+
+.section-features {
+    background-color: green;
+
+    grid-column: center-start / center-end;
+}
+
+.section-newsletter {
+    background-color: darkgray;
+
+    grid-column: full-start / full-end;
+}
+
+.section-gallery {
+    background-color: darksalmon;
+
+    grid-column: full-start / full-end;
+}
