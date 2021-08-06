@@ -35,14 +35,17 @@
     }
 
     &__close {
-        display: block;
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-
         &,
         &:link,
         &:visited {
+            display: block;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: $color-font-dark;
+        }
+
+        &:hover {
             color: $color-primary-dark;
         }
     }

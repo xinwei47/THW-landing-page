@@ -3,8 +3,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-        &:hover .graph__box:not(:hover) {
-            transform: scale(0.95);
+        &:hover .demo__graph-box:not(:hover) {
+            transform: scale(0.98);
             transition: transform 0.4s ease;
         }
     }
@@ -19,6 +19,7 @@
 
     &__graph {
         border-radius: 50%;
+        box-shadow: $box-shadow;
         &--1 {
             background-color: $color-primary-light1;
             width: 30rem;
@@ -60,7 +61,7 @@
             }
         }
         &--continents {
-            transform: translateY(-40%);
+            transform: translateY(-45%);
             margin-right: $margin-sm;
 
             &--number {
@@ -70,10 +71,10 @@
             }
         }
         &--countries {
-            transform: translateY(50%);
+            transform: translateY(60%);
             &--number {
                 line-height: 1;
-                font-size: 3.2rem;
+                font-size: 4rem;
                 font-weight: 600;
             }
         }
@@ -89,7 +90,7 @@
         }
 
         &--group {
-            transform: translateX(-20%);
+            transform: translateX(-30%);
             &--number {
                 font-weight: 800;
                 line-height: 1;
