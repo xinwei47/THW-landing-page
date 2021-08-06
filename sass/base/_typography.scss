@@ -1,8 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
     color: $color-font-dark;
-
-    //development code
     font-size: 1.6rem;
 }
 
@@ -12,15 +10,41 @@ body {
 }
 
 .heading--2 {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     line-height: 4rem;
 }
 
 .heading--3 {
+    font-size: 2.4rem;
+}
+
+.heading--4 {
     font-size: 2rem;
 }
 
+.heading--5 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
 .text-highlight--1 {
-    color: $color-white;
     background: linear-gradient(180deg, transparent 50%, $color-primary 50%);
+}
+
+.text-highlight--2 {
+    position: relative;
+    display: inline-block;
+    &::after {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 4px;
+        background-color: $color-primary;
+
+        position: absolute;
+        bottom: -16px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
 }

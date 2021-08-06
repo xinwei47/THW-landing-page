@@ -1,0 +1,103 @@
+.demo {
+    &__graph-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &:hover .graph__box:not(:hover) {
+            transform: scale(0.95);
+            transition: transform 0.4s ease;
+        }
+    }
+
+    &__graph-box {
+        &:hover {
+            transform: scale(1.1) translateY(1rem);
+            transition: transform 0.4s;
+            z-index: 100;
+        }
+    }
+
+    &__graph {
+        border-radius: 50%;
+        &--1 {
+            background-color: $color-primary-light1;
+            width: 30rem;
+            height: 30rem;
+            font-weight: 600;
+        }
+        &--2 {
+            background-color: $color-primary-dark;
+            color: $color-white;
+            width: 20rem;
+            height: 20rem;
+            transform: translate(-40%, -20%);
+        }
+        &--3 {
+            background-color: $color-primary-medium;
+            color: $color-white;
+            width: 25rem;
+            height: 25rem;
+
+            justify-self: end;
+            transform: translate(30%, -30%);
+        }
+        &--4 {
+            background-color: $color-primary-light2;
+            width: 35rem;
+            height: 35rem;
+            transform: translate(-10%, -60%);
+        }
+    }
+
+    &__data {
+        &--occupation {
+            list-style: none;
+        }
+        &--age {
+            &--number {
+                font-weight: 600;
+                font-size: 2rem;
+            }
+        }
+        &--continents {
+            transform: translateY(-40%);
+            margin-right: $margin-sm;
+
+            &--number {
+                line-height: 1;
+                font-size: 6.4rem;
+                font-weight: 600;
+            }
+        }
+        &--countries {
+            transform: translateY(50%);
+            &--number {
+                line-height: 1;
+                font-size: 3.2rem;
+                font-weight: 600;
+            }
+        }
+
+        &--solo {
+            margin-bottom: $margin-sm;
+            transform: translateX(60%);
+            &--number {
+                font-size: 4rem;
+                line-height: 1;
+                font-weight: 700;
+            }
+        }
+
+        &--group {
+            transform: translateX(-20%);
+            &--number {
+                font-weight: 800;
+                line-height: 1;
+                font-size: 6rem;
+            }
+            &--heading {
+                width: 60%;
+            }
+        }
+    }
+}

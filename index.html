@@ -7,7 +7,8 @@
     <title>THW Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -79,34 +80,265 @@
             </div>
 
             <div class="header__text">
-                <h1 class="header__title heading--1">Find Your Tribe.<br>Push Your Limit.</h1>
-                <h2 class="header__subtitle heading--2">We bring <mark class="text-highlight--1">like-minded
-                        women</mark> together and take them on unique <mark class="text-highlight--1">outdoor
-                        excursions</mark> to<mark class="text-highlight--1">bucket-list</mark> destinations.</h2>
+                <h1 class="header__heading heading--1">Find Your Tribe,<br>Push Your Limit.</h1>
+                <h2 class="header__subheading heading--2">We bring <span class="text-highlight--1">like-minded
+                        women</span> together and take them on unique <span class="text-highlight--1">outdoor
+                        excursions</span> to<span class="text-highlight--1">bucket-list</span> destinations.</h2>
             </div>
         </header>
 
-        <section class="section-destinations">
-            Destinations
+        <section class="destinations">
+            <div class="destinations-text center-element">
+                <h2 class="destinations__heading heading--2 text-highlight--2">Choose your next
+                    adventure</h2>
+                <p>We carefully consider which destinations are best for small
+                    groups and broadening your horizons.</p>
+            </div>
+
+            <div class="destinations__card-container">
+                <!-- Card #1 -->
+                <div class="card">
+                    <!-- card frontside -->
+                    <div class="card__side card__side--front">
+                        <div class="card__img-container">
+                            <img src="/media/destinations-ebc.jpg" alt="ebc image" class="card__img">
+                        </div>
+                        <div class="card__heading-container center-element">
+                            <span class="card__subheading text-highlight--1">Nepal</span>
+                            <h3 class="card__heading heading--3">Everest Base Camp Trek</h3>
+                        </div>
+                        <div class="card__details">
+                            <ul class="card__details-list center-element">
+                                <li class="card__tour-length">
+                                    <i class="card__icon far fa-calendar"></i>
+                                    <span>14 Days</span>
+                                </li>
+                                <li class="card__tour-size">
+                                    <i class="card__icon fas fa-user-friends"></i>
+                                    <span>Up to 15 People</span>
+                                </li>
+                                <li class="card__tour-difficulty">
+                                    <i class="card__icon fas fa-hiking"></i>
+                                    <span>Challenging</span>
+                                </li>
+                                <li class="card__tour-type">
+                                    <i class="card__icon fas fa-route"></i>
+                                    <span>Outdoor & Trekking</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- card backside -->
+                    <div class="card__side card__side--back">
+                        <div class="card__tour-price">
+                            <h4 class="card__price-heading center-element">Price (USD)</h4>
+                            <p class="card__price-text">$2,199</p>
+                        </div>
+                        <a href="#" class="btn-primary">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Card #2 -->
+                <div class="card">
+                    <!-- card frontside -->
+                    <div class="card__side card__side--front">
+                        <div class="card__img-container">
+                            <img src="/media/destinations-mp.png" alt="machu picchu image" class="card__img">
+                        </div>
+                        <div class="card__heading-container center-element">
+                            <span class="card__subheading text-highlight--1">Peru</span>
+                            <h3 class="card__heading heading--3">Machu Picchu</h3>
+                        </div>
+                        <div class="card__details">
+                            <ul class="card__details-list center-element">
+                                <li class="card__tour-length">
+                                    <i class="card__icon far fa-calendar"></i>
+                                    <span>8 Days</span>
+                                </li>
+                                <li class="card__tour-size">
+                                    <i class="card__icon fas fa-user-friends"></i>
+                                    <span>Up to 12 People</span>
+                                </li>
+                                <li class="card__tour-difficulty">
+                                    <i class="card__icon fas fa-hiking"></i>
+                                    <span>Easy</span>
+                                </li>
+                                <li class="card__tour-type">
+                                    <i class="card__icon fas fa-route"></i>
+                                    <span>Culture & Trekking</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- card backside -->
+                    <div class="card__side card__side--back">
+                        <div class="card__tour-price">
+                            <h4 class="card__price-heading center-element">Price (USD)</h4>
+                            <p class="card__price-text">$1,980</p>
+                        </div>
+                        <a href="#" class="btn-primary">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Card #3 -->
+                <div class="card">
+                    <!-- card frontside -->
+                    <div class="card__side card__side--front">
+                        <div class="card__img-container">
+                            <img src="/media/destinations-kilimanjaro.jpg" alt="kilimanjaro image" class="card__img">
+                        </div>
+                        <div class="card__heading-container center-element">
+                            <span class="card__subheading text-highlight--1">Tanzania</span>
+                            <h3 class="card__heading heading--3">Kilimanjaro</h3>
+                        </div>
+                        <div class="card__details">
+                            <ul class="card__details-list center-element">
+                                <li class="card__tour-length">
+                                    <i class="card__icon far fa-calendar"></i>
+                                    <span>9 Days</span>
+                                </li>
+                                <li class="card__tour-size">
+                                    <i class="card__icon fas fa-user-friends"></i>
+                                    <span>Up to 15 People</span>
+                                </li>
+                                <li class="card__tour-difficulty">
+                                    <i class="card__icon fas fa-hiking"></i>
+                                    <span>Very Challenging</span>
+                                </li>
+                                <li class="card__tour-type">
+                                    <i class="card__icon fas fa-route"></i>
+                                    <span>Trekking & Climbing</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- card backside -->
+                    <div class="card__side card__side--back">
+                        <div class="card__tour-price">
+                            <h4 class="card__price-heading center-element">Price</h4>
+                            <p class="card__price-text">$3,299</p>
+                        </div>
+                        <a href="#" class="btn-primary">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Card #4 -->
+                <div class="card">
+                    <!-- card frontside -->
+                    <div class="card__side card__side--front">
+                        <div class="card__img-container">
+                            <img src="/media/destinations-bhutan.png" alt="bhutan image" class="card__img">
+                        </div>
+                        <div class="card__heading-container center-element">
+                            <span class="card__subheading text-highlight--1">Bhutan</span>
+                            <h3 class="card__heading heading--3">Discover Bhutan</h3>
+                        </div>
+                        <div class="card__details">
+                            <ul class="card__details-list center-element">
+                                <li class="card__tour-length">
+                                    <i class="card__icon far fa-calendar"></i>
+                                    <span>10 Days</span>
+                                </li>
+                                <li class="card__tour-size">
+                                    <i class="card__icon fas fa-user-friends"></i>
+                                    <span>Up to 12 People</span>
+                                </li>
+                                <li class="card__tour-difficulty">
+                                    <i class="card__icon fas fa-hiking"></i>
+                                    <span>Easy</span>
+                                </li>
+                                <li class="card__tour-type">
+                                    <i class="card__icon fas fa-route"></i>
+                                    <span>Culture & Hiking</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- card backside -->
+                    <div class="card__side card__side--back">
+                        <div class="card__tour-price">
+                            <h4 class="card__price-heading center-element">Price</h4>
+                            <p class="card__price-text">$2,199</p>
+                        </div>
+                        <a href="#" class="btn-primary">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section class="section-demo">
-            Demographics
+        <section class="demographics">
+            <div class="demo demo__text">
+                <h2 class="demo__heading heading--2 text-highlight--2">Who travel with us?</h2>
+                <p>We are more than a travel company. We are a community connecting women with diverse backgrounds.</p>
+                <p>No matter where we come from, we share the same interests to explore the unknown.</p>
+            </div>
+            <div class="demo demo__graph-container">
+                <div class="demo__graph-box">
+                    <div class="demo__graph demo__graph--1 center-content-block--row">
+                        <ul class="demo__data demo__data--occupation">
+                            <li>artists</li>
+                            <li>charity workers</li>
+                            <li>full-time mothers</li>
+                            <li>office workers</li>
+                            <li>teachers</li>
+                            <li>etc.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="demo__graph-box">
+                    <div class="demo__graph demo__graph--2 center-content-block--row">
+                        <div class="demo__data demo__data--age">
+                            <p class="demo__data--age--number">22 ~ 64</p>
+                            <h5 class="heading--5 center-element">Age</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo__graph-box">
+                    <div class="demo__graph demo__graph--3 center-content-block--row">
+                        <div class="demo__data demo__data--continents center-content-block--column">
+                            <p class="demo__data--continents--number">4</p>
+                            <h5 class="heading--5 demo__data--continents--heading">Continents</h5>
+                        </div>
+                        <div class="demo__data demo__data--countries center-content-block--column">
+                            <p class="demo__data--countries--number">10+</p>
+                            <h5 class="heading--5 demo__data--countries--heading">Countries</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo__graph-box">
+                    <div class="demo__graph demo__graph--4 center-content-block--column">
+                        <div class="demo__data demo__data--solo center-content-block--column">
+                            <p class="demo__data--solo--number">78%</p>
+                            <h5 class="heading--5 demo__data--solo--heading">Solo Travelers</h5>
+                        </div>
+                        <div class="demo__data demo__data--group center-content-block--column">
+                            <p class="demo__data--group--number">22%</p>
+                            <h5 class="demo__data--group--heading heading--5 center-element">travel with friends and
+                                families</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section-blog">
+        <section class="blog">
             Blog
         </section>
 
-        <section class="section-features">
+        <section class="features">
             Features
         </section>
 
-        <section class="section-newsletter">
+        <section class="newsletter">
             Newsletter
         </section>
 
-        <section class="section-gallery">
+        <section class="gallery">
             Gallery
         </section>
 
@@ -121,3 +353,10 @@
 </body>
 
 </html>
+
+
+<div class="scale">
+    <div class="translate">
+        Hello World
+    </div>
+</div>

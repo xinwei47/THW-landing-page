@@ -1,34 +1,51 @@
-.section-destinations {
-    background-color: burlywood;
-
+.destinations {
     grid-column: center-start / center-end;
+
+    &__heading {
+        margin: $header-margin;
+    }
+    &__card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+        column-gap: 12rem;
+        row-gap: 6rem;
+
+        margin: $margin-lg 0;
+    }
 }
 
-.section-demo {
-    background-color: cadetblue;
-
+.demographics {
+    margin-top: $margin-xl;
     grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    column-gap: 12rem;
+
+    .demo__heading {
+        margin: $header-margin;
+    }
 }
 
-.section-blog {
+.blog {
     background-color: cornflowerblue;
 
     grid-column: full-start / full-end;
 }
 
-.section-features {
+.features {
     background-color: green;
 
     grid-column: center-start / center-end;
 }
 
-.section-newsletter {
+.newsletter {
     background-color: darkgray;
 
     grid-column: full-start / full-end;
 }
 
-.section-gallery {
+.gallery {
     background-color: darksalmon;
 
     grid-column: full-start / full-end;

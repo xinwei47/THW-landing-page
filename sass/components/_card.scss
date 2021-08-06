@@ -1,0 +1,106 @@
+.card {
+    position: relative;
+    height: 66rem;
+    perspective: 150rem;
+
+    &__side {
+        transition: all 0.6s ease; //transition happens on .card__side rather than .card
+        width: 100%;
+        height: 100%;
+
+        backface-visibility: hidden;
+        overflow: hidden;
+
+        box-shadow: $box-shadow;
+        border-radius: $border-radius-xl;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &--front {
+            padding-bottom: $padding-md;
+        }
+
+        &--back {
+            background: linear-gradient(45deg, $color-primary-light1, $color-primary-light2);
+            transform: rotateY(180deg);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    // card frontside styling
+    &__img-container {
+        height: 50%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: opacity(0.8);
+        border-radius: $border-radius-xl;
+    }
+
+    &__heading-container {
+        width: 65%;
+        background-color: $color-highlight;
+        border-radius: $border-radius-sm;
+        padding: $padding-xxs 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        box-shadow: $box-shadow;
+    }
+
+    &__subheading,
+    &__heading {
+        color: $color-white;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__details-list {
+        width: 80%;
+        list-style: none;
+
+        & > * {
+            padding: $padding-sm 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba($color-black, 0.1);
+            }
+        }
+    }
+
+    &__icon {
+        color: $color-primary;
+        margin-right: $margin-xs;
+    }
+
+    // card backside styling
+    &__price-heading {
+        color: $color-primary;
+    }
+
+    &__price-text {
+        font-size: 8rem;
+        font-weight: 200;
+        margin: $margin-md 0 $margin-xl 0;
+    }
+}

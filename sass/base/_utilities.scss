@@ -6,3 +6,16 @@
 p + p {
     margin-top: $margin-sm;
 }
+
+.center-content-block--row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-content-block--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

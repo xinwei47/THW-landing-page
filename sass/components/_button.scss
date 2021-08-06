@@ -15,8 +15,8 @@
     letter-spacing: 2px;
     text-decoration: none;
     background-color: $color-primary-dark;
-    padding: 1rem 4rem;
-    border-radius: $border-radius-lg;
+    padding: $padding-xs $padding-lg;
+    border-radius: $border-radius-xl;
     box-shadow: $box-shadow;
     transition: all 0.2s;
 
@@ -27,7 +27,7 @@
     }
 
     &:hover {
-        transform: translateY(-3px);
+        transform: translateY(-4px);
     }
 
     &:active {
