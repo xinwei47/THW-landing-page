@@ -1,7 +1,8 @@
 .announcement {
     background-color: $color-secondary;
+    grid-row: 1/2;
     font-size: 1.4rem;
-
+    width: 100%;
     display: grid;
     grid-template-columns: 5rem 1fr 5rem;
     justify-items: center;

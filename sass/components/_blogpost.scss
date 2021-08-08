@@ -1,0 +1,48 @@
+.blog-post {
+    position: relative;
+
+    &__img-container {
+        // set the image container to a square
+        height: calc(100vw / 3);
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.85;
+    }
+    &__content-container {
+        background-color: rgba($color-primary-light2, 0.85);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: $padding-md;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        visibility: hidden;
+        opacity: 0;
+
+        transition: all 0.2s ease-in;
+    }
+
+    &__heading-container {
+        margin-bottom: $margin-sm;
+    }
+
+    &__abstract {
+        overflow: hidden;
+        margin-bottom: $margin-sm;
+    }
+
+    &:hover .blog-post__content-container {
+        visibility: visible;
+        opacity: 1;
+    }
+}

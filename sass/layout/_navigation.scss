@@ -1,10 +1,28 @@
 .navigation {
-    padding: 2rem 0;
     grid-column: center-start / center-end;
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) 2fr;
     align-items: center;
+    padding: $padding-sm 0;
+
+    &__menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media only screen and (max-width: $bp-lg) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media only screen and (max-width: $bp-xl) {
+        grid-column: full-start / full-end;
+        padding: $padding-sm;
+    }
+
+    @media only screen and (max-width: $bp-lg) {
+        grid-template-columns: 1fr;
+    }
 
     &__logo {
         display: block;
@@ -14,14 +32,25 @@
     &__main,
     &__sub {
         list-style: none;
-
-        display: flex;
-        justify-content: space-between;
+        display: grid;
     }
 
-    &__item {
-        &:not(:last-child) {
-            margin-right: 4rem;
+    &__main {
+        justify-self: center;
+        grid-template-columns: repeat(5, min-content);
+        column-gap: 4rem;
+        @media only screen and (max-width: $bp-lg) {
+            grid-template-columns: 1fr;
+            justify-self: start;
+        }
+    }
+
+    &__sub {
+        grid-template-columns: repeat(2, min-content);
+        column-gap: 4rem;
+        justify-content: end;
+        @media only screen and (max-width: $bp-lg) {
+            justify-self: start;
         }
     }
 

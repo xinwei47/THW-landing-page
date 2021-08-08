@@ -1,0 +1,15 @@
+.feature {
+    &__icon {
+        font-size: 6rem;
+        color: $color-primary;
+    }
+
+    &__heading {
+        align-self: center;
+        margin: $margin-sm 0;
+    }
+
+    &__text {
+        // margin: 0;
+    }
+}
