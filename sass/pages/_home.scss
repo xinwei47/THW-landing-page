@@ -6,7 +6,7 @@
     }
     &__card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
         column-gap: 12rem;
         row-gap: 6rem;
 
@@ -67,8 +67,6 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(min-content, 1fr));
         column-gap: $grid-gap-lg;
-        // row-gap: $grid-gap-xs;
-        // align-items: start;
 
         @media only screen and (max-width: $bp-lg) {
             grid-template-columns: 1fr;
@@ -77,13 +75,37 @@
 }
 
 .newsletter {
-    background-color: darkgray;
+    background: linear-gradient(180deg, rgba($color-white, 0.6), rgba($color-white, 0.6)), url(/media/newsletter.png);
+    background-size: cover;
+    background-position: center;
 
     grid-column: full-start / full-end;
+
+    &__container {
+        max-width: 80%;
+        margin: $margin-md auto;
+    }
 }
 
-.gallery {
-    background-color: darksalmon;
+.social-media {
+    background-color: $color-secondary;
+    padding: $padding-xs 0;
 
-    grid-column: full-start / full-end;
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            color: $color-white;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__instagram,
+    &__facebook {
+        display: inline-block;
+    }
+
+    &__instagram {
+        margin-right: $margin-md;
+    }
 }

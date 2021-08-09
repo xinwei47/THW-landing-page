@@ -1,0 +1,49 @@
+.form {
+    padding: $padding-md $padding-lg;
+
+    &__heading {
+        color: $color-secondary;
+    }
+
+    &__subheading {
+        margin: $margin-sm 0;
+    }
+
+    &__fields {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    &__group {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: $margin-sm;
+        }
+    }
+
+    &__input {
+        font-size: 1.6rem;
+        font-family: inherit;
+        width: 100%;
+        padding: $padding-xs $padding-xs;
+        border: rgba($color-black, 0.2);
+
+        &:not(:last-child) {
+            border-radius: $border-radius-sm;
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom: 4px solid $color-primary-dark;
+        }
+    }
+
+    &__btn {
+        &,
+        &:link,
+        &:visited {
+            border: none;
+        }
+    }
+}
