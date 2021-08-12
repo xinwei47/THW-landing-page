@@ -11,14 +11,15 @@
     left: 0;
     z-index: 100;
 
-    // you must make the element or its background at least partially transparent to see the "backdrop-filter" effect
+    // must make the element or its background at least partially transparent to see the "backdrop-filter" effect
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(6px);
 
+    display: none; // hidden content won't pop up when resizing and refreshing the window
     visibility: hidden;
     opacity: 0;
 
-    transition: all 0.2s 0.2s;
+    // transition: all 0.4s 0.2s; // transition doesn't work with display: none;
 
     &__content {
         width: 60%;
@@ -52,6 +53,7 @@
 
     // when #popup is a target url
     &:target {
+        display: flex;
         visibility: visible;
         opacity: 1;
     }

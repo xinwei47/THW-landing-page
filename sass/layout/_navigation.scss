@@ -2,26 +2,40 @@
     grid-column: center-start / center-end;
 
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr) 2fr;
+    grid-template-columns: min-content 2fr;
     align-items: center;
-    padding: $padding-sm 0;
+    padding: $padding-xs 0;
 
     &__menu {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr min-content;
+        align-items: center;
+        justify-content: center;
 
         @media only screen and (max-width: $bp-lg) {
-            grid-template-columns: 1fr;
+            grid-template-columns: min-content;
+            grid-template-rows: minmax(0, 1fr) repeat(2, min-content) minmax(0, 1fr);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            z-index: 20;
+
+            // Bug: hidden content pops up for a sec when resizing and refreshing the window
+            // display:none; cannot apply transition -- DOESN'T WORK
+            width: 0;
+            visibility: hidden;
+            opacity: 0;
+            overflow: hidden;
+
+            transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         }
-    }
 
-    @media only screen and (max-width: $bp-xl) {
-        grid-column: full-start / full-end;
-        padding: $padding-sm;
-    }
-
-    @media only screen and (max-width: $bp-lg) {
-        grid-template-columns: 1fr;
+        &--show {
+            width: 100%;
+            visibility: visible;
+            opacity: 1;
+        }
     }
 
     &__logo {
@@ -32,29 +46,38 @@
     &__main,
     &__sub {
         list-style: none;
-        display: grid;
     }
 
     &__main {
         justify-self: center;
+
+        display: grid;
         grid-template-columns: repeat(5, min-content);
         column-gap: 4rem;
+
         @media only screen and (max-width: $bp-lg) {
+            grid-row: 2 / 3;
             grid-template-columns: 1fr;
-            justify-self: start;
+            row-gap: $grid-gap-sm;
+
+            font-size: 4rem;
         }
     }
 
     &__sub {
+        display: grid;
         grid-template-columns: repeat(2, min-content);
-        column-gap: 4rem;
-        justify-content: end;
+        column-gap: $grid-gap-sm;
+
         @media only screen and (max-width: $bp-lg) {
-            justify-self: start;
+            grid-row: 3 / 4;
+            margin-top: $margin-md;
+            column-gap: $grid-gap-lg;
         }
     }
 
     &__link {
+        transition: all 0.2s;
         &:link, //hasn't been visited
         &:visited,
         &:active {
@@ -62,10 +85,105 @@
             font-weight: 600;
             color: $color-font-dark;
         }
+
+        &:hover {
+            color: $color-primary-dark;
+        }
     }
 
     &__icon {
         fill: $color-font-dark;
         font-size: 2rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            font-size: 4rem;
+        }
+    }
+
+    // navigation menu button
+    &__btn-bg {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: radial-gradient($color-primary-light1, $color-primary-light2);
+        position: fixed;
+        top: 50px;
+        right: 50px;
+
+        transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        z-index: 10;
+
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+
+        &--scale {
+            transform: scale(100);
+        }
+
+        @media only screen and (max-width: $bp-lg) {
+            display: unset;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__menu-toggle {
+        cursor: pointer;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background: linear-gradient(45deg, $color-primary, $color-primary-dark);
+        position: fixed;
+        top: 4rem;
+        right: 4rem;
+
+        opacity: 0;
+        visibility: hidden;
+        z-index: 30;
+
+        @media only screen and (max-width: $bp-lg) {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__menu-icon {
+        position: relative;
+        background-color: $color-primary-light2;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-primary-light2;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.2s;
+        }
+
+        &::before {
+            top: -0.8rem;
+        }
+
+        &::after {
+            top: 0.8rem;
+        }
+    }
+
+    &__menu-toggle:hover &__menu-icon::before {
+        top: -1rem;
+    }
+
+    &__menu-toggle:hover &__menu-icon::after {
+        top: 1rem;
     }
 }

@@ -6,8 +6,8 @@
     }
     &__card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-        column-gap: 12rem;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        column-gap: 6rem;
         row-gap: 6rem;
 
         margin: $margin-lg 0;
@@ -15,7 +15,6 @@
 }
 
 .demographics {
-    margin-top: $margin-xl;
     grid-column: center-start / center-end;
 
     display: grid;
@@ -47,17 +46,37 @@
 
     &__heading-container {
         max-height: calc(100vw / 3);
-        padding: $padding-md;
+        padding: $padding-sm;
+
+        @media only screen and (max-width: $bp-sm) {
+            padding: 0;
+        }
+    }
+
+    &__heading {
+        @media only screen and (max-width: $bp-lg) {
+            margin-bottom: $margin-lg;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            font-size: 2.4rem;
+            line-height: 1;
+            margin-bottom: $margin-md;
+        }
     }
 
     &__intro-text {
         margin: $margin-md 0;
+
+        @media only screen and (max-width: $bp-lg) {
+            display: none;
+        }
     }
 }
 
 .features {
     grid-column: center-start / center-end;
-    margin: $margin-lg 0;
+    margin: $margin-xl 0;
 
     &__heading-container {
         margin-bottom: $margin-lg;

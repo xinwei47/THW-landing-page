@@ -44,7 +44,7 @@
             }
 
             @media only screen and (max-width: $bp-sm) {
-                transform: translate(5%);
+                transform: translate(10%, 8%);
             }
         }
         &--2 {
@@ -75,7 +75,7 @@
             background-color: $color-primary-light2;
             width: 35rem;
             height: 35rem;
-            transform: translate(-10%, -60%);
+            transform: translate(-15%, -60%);
         }
     }
 
