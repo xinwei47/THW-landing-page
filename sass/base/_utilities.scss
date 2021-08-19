@@ -20,7 +20,11 @@ p + p {
     align-items: center;
 }
 
-.show-content {
-    opacity: 1;
-    visibility: visible;
+.popup-show {
+    display: flex !important;
+}
+
+.nav-show {
+    display: grid !important;
+    width: 100%;
 }

@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: min-content 2fr;
     align-items: center;
-    padding: $padding-xs 0;
+    padding: $padding-sm 0;
 
     &__menu {
         display: grid;
@@ -23,24 +23,21 @@
 
             // Bug: hidden content pops up for a sec when resizing and refreshing the window
             // display:none; cannot apply transition -- DOESN'T WORK
-            width: 0;
-            visibility: hidden;
-            opacity: 0;
-            overflow: hidden;
-
-            transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+            display: none;
+            animation: menuOpen 0.8s cubic-bezier(0.45, 1.25, 0.98, 1.48);
         }
-
-        &--show {
-            width: 100%;
-            visibility: visible;
-            opacity: 1;
+    }
+    &__logo-box {
+        height: 4rem;
+        @media only screen and (max-width: $bp-lg) {
+            position: absolute;
+            top: 4.5rem;
+            left: 5rem;
         }
     }
 
     &__logo {
-        display: block;
-        height: 4rem;
+        height: 100%;
     }
 
     &__main,
@@ -107,10 +104,10 @@
         border-radius: 50%;
         background: radial-gradient($color-primary-light1, $color-primary-light2);
         position: fixed;
-        top: 50px;
-        right: 50px;
+        top: 4rem;
+        right: 5rem;
 
-        transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all 0.6s ease;
         z-index: 10;
 
         display: none;
@@ -140,6 +137,7 @@
 
         opacity: 0;
         visibility: hidden;
+
         z-index: 30;
 
         @media only screen and (max-width: $bp-lg) {

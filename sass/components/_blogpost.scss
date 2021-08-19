@@ -38,12 +38,29 @@
     }
 
     &__abstract {
-        overflow: hidden;
+        overflow: scroll;
         margin-bottom: $margin-sm;
     }
 
     &:hover .blog-post__content-container {
         visibility: visible;
         opacity: 1;
+    }
+
+    // *********************
+    // display blogs on mobile devices (without hovering)
+    @media only screen and (max-width: $bp-md), only screen and (hover: none) {
+        position: relative;
+        grid-row: 2 / 3;
+        box-shadow: $box-shadow;
+        margin-bottom: $margin-lg;
+
+        &__content-container {
+            height: 40rem;
+            position: relative;
+            justify-content: flex-start;
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }

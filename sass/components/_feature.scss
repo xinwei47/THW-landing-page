@@ -9,7 +9,9 @@
         margin: $margin-sm 0;
     }
 
-    // &__text {
-    // margin: 0;
-    // }
+    @media only screen and (max-width: $bp-lg) {
+        &:not(:last-child) {
+            margin-bottom: $margin-md;
+        }
+    }
 }

@@ -6,7 +6,7 @@
     }
     &__card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
         column-gap: 6rem;
         row-gap: 6rem;
 
@@ -41,35 +41,36 @@
 .blog {
     grid-column: full-start / full-end;
 
-    display: grid;
-    grid-template-columns: repeat(3, calc(100vw / 3));
-
     &__heading-container {
-        max-height: calc(100vw / 3);
-        padding: $padding-sm;
+        width: 80%;
+        margin: auto;
+        margin-bottom: $margin-lg;
 
-        @media only screen and (max-width: $bp-sm) {
-            padding: 0;
+        @media only screen and (max-width: $bp-md) {
+            margin-bottom: $margin-xs;
         }
     }
 
     &__heading {
-        @media only screen and (max-width: $bp-lg) {
-            margin-bottom: $margin-lg;
-        }
-
-        @media only screen and (max-width: $bp-sm) {
+        @media only screen and (max-width: $bp-md) {
             font-size: 2.4rem;
             line-height: 1;
-            margin-bottom: $margin-md;
         }
     }
 
     &__intro-text {
         margin: $margin-md 0;
+    }
 
-        @media only screen and (max-width: $bp-lg) {
-            display: none;
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, calc(100vw / 3));
+
+        @media only screen and (max-width: $bp-md), only screen and (hover: none) {
+            grid-template-columns: repeat(9, calc(100vw / 1.8));
+            row-gap: $grid-gap-lg;
+            column-gap: $grid-gap-sm;
+            overflow: scroll;
         }
     }
 }

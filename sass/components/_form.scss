@@ -23,11 +23,12 @@
     }
 
     &__input {
+        box-sizing: content-box;
         font-size: 1.6rem;
         font-family: inherit;
         width: 100%;
-        padding: $padding-xs $padding-xs;
-        border: rgba($color-black, 0.2);
+        padding: $padding-xs;
+        border: 3px solid transparent;
 
         &:not(:last-child) {
             border-radius: $border-radius-sm;
@@ -35,7 +36,11 @@
 
         &:focus {
             outline: none;
-            border-bottom: 4px solid $color-primary-dark;
+            border-bottom: 3px solid $color-primary-dark;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-highlight;
         }
     }
 

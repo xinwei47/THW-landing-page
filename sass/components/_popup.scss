@@ -16,14 +16,11 @@
     backdrop-filter: blur(6px);
 
     display: none; // hidden content won't pop up when resizing and refreshing the window
-    visibility: hidden;
-    opacity: 0;
-
-    // transition: all 0.4s 0.2s; // transition doesn't work with display: none;
+    animation: popupOpen 0.6s; // transition doesn't work with display: none; Use @keyframes instead
 
     &__content {
-        width: 60%;
-        height: auto;
+        max-width: 60%;
+        max-height: 70%;
         background-color: $color-white;
         box-shadow: $box-shadow;
         border-radius: $border-radius-sm;
@@ -49,13 +46,6 @@
         &:hover {
             color: $color-primary-dark;
         }
-    }
-
-    // when #popup is a target url
-    &:target {
-        display: flex;
-        visibility: visible;
-        opacity: 1;
     }
 
     &__btn {
