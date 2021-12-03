@@ -8,6 +8,9 @@ In this projet, I conducted comprehensive UX research and UX/UI design to provid
 ## Wireframes
 ![home page wireframes](https://drive.google.com/uc?export=view&id=1JH0RnTEPIWJHNxG_kZ6aeCRHYlZgX7xs)
 
+## Brand Style Tile
+![brand style tile](https://drive.google.com/uc?export=view&id=1lvOFae-djamM6Tqmcr2PIfNDkcnAip3i)
+
+
 ## High-fidelity Mockup
 ![home page mockups](https://drive.google.com/uc?export=view&id=1EzmjTr-FEElGBsQd_sD1tlgidJgiPAP7)
-
