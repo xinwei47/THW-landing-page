@@ -5,6 +5,10 @@ Travel Her Way, founded back in 2017, is an outdoor adventure travel company org
 
 In this projet, I conducted comprehensive UX research and UX/UI design to provide frictionless online shopping experiences. I also built the landing page from scratch.
 
+**Technology used:** Sass, HTML, Javascript, Figma
+
+**Visit site:**
+
 ## Wireframes
 ![home page wireframes](https://drive.google.com/uc?export=view&id=1JH0RnTEPIWJHNxG_kZ6aeCRHYlZgX7xs)
 
