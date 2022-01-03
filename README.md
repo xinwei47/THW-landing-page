@@ -7,7 +7,7 @@ In this projet, I conducted comprehensive UX research and UX/UI design to provid
 
 **Technology used:** Sass, HTML, Javascript, Figma
 
-**Visit site:**
+**Visit site:** https://thw-landing-page.netlify.app/
 
 ## Wireframes
 ![home page wireframes](https://drive.google.com/uc?export=view&id=1JH0RnTEPIWJHNxG_kZ6aeCRHYlZgX7xs)
