@@ -43,7 +43,7 @@ body {
       min-content
     );
   grid-template-columns:
-    [full-start] minmax(6rem, 1fr)
+    [full-start] minmax(4rem, 1fr)
     [center-start] repeat(12, [col-start] minmax(0, 9.5rem) [col-end])
     [center-end] // 1140 / 12 = 95
     minmax(4rem, 1fr) [full-end];

@@ -1,738 +1,1046 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THW Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="announcement">
-        <div class="announcement__text">
-            <a href="#" class="announcement__link">Click for COVID-19 updates.</a>
-        </div>
-        <a class="announcement__close">
-            <i class="close-icon fas fa-times"></i>
-        </a>
+      <div class="announcement__text">
+        <a href="#" class="announcement__link">Click for COVID-19 updates.</a>
+      </div>
+      <a class="announcement__close">
+        <i class="close-icon fas fa-times"></i>
+      </a>
     </div>
 
     <div class="popup" id="popup">
-        <div class="popup__content">
-            <a href="#" class="popup__close"><i class="close-icon fas fa-times"></i></a>
-            <h3 class="popup__heading heading--2 center-element">COVID-19 Travel Updates</h3>
-            <p class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur
-                architecto, quo neque dolor exercitationem quis ut dolores eligendi rem officiis ullam quidem
-                expedita vitae incidunt excepturi, obcaecati libero qui? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Ex voluptatibus numquam harum iure, quaerat molestiae expedita iste ducimus
-                provident quisquam.</p>
-            <p class="popup__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur
-                architecto, quo neque dolor exercitationem quis ut dolores eligendi rem officiis ullam quidem
-                expedita vitae incidunt excepturi, obcaecati libero qui? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Ex voluptatibus numquam harum iure, quaerat molestiae expedita iste ducimus
-                provident quisquam.</p>
-            <div class="popup__btn-container center-element">
-                <a href="#" class="popup__btn btn--primary">Learn More &#10095;</a>
-            </div>
+      <div class="popup__content">
+        <a href="#" class="popup__close"
+          ><i class="close-icon fas fa-times"></i
+        ></a>
+        <h3 class="popup__heading heading--2 center-element">
+          COVID-19 Travel Updates
+        </h3>
+        <p class="popup__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+          consequatur architecto, quo neque dolor exercitationem quis ut dolores
+          eligendi rem officiis ullam quidem expedita vitae incidunt excepturi,
+          obcaecati libero qui? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ex voluptatibus numquam harum iure, quaerat
+          molestiae expedita iste ducimus provident quisquam.
+        </p>
+        <p class="popup__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+          consequatur architecto, quo neque dolor exercitationem quis ut dolores
+          eligendi rem officiis ullam quidem expedita vitae incidunt excepturi,
+          obcaecati libero qui? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ex voluptatibus numquam harum iure, quaerat
+          molestiae expedita iste ducimus provident quisquam.
+        </p>
+        <div class="popup__btn-container center-element">
+          <a href="#" class="popup__btn btn--primary">Learn More &#10095;</a>
         </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="navigation">
-            <div class="navigation__logo-box">
-                <a href="#" class="navigation__logo-link">
-                    <img src="/media/logo.png" alt="company logo" class="navigation__logo">
-                </a>
-            </div>
-
-            <div class="navigation__btn-bg" id="navi__btn-bg">&nbsp;</div>
-            <div class="navigation__menu-toggle center-content-block--column" id="navi__menu-toggle">
-                <span class="navigation__menu-icon">&nbsp;</span>
-            </div>
-
-            <div class="navigation__menu" id="navi__menu">
-                <ul class="navigation__main">
-                    <li class="navigation__item"><a href="#" class="navigation__link">Adventures</a>
-                    </li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Resources</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
-                </ul>
-                <ul class="navigation__sub">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><i
-                                class="navigation__icon fas fa-user"></i></a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><i
-                                class="navigation__icon fas fa-shopping-cart"></i></a></li>
-                </ul>
-            </div>
+      <div class="navigation">
+        <div class="navigation__logo-box">
+          <a href="#" class="navigation__logo-link">
+            <img
+              src="/media/logo.png"
+              alt="company logo"
+              class="navigation__logo"
+            />
+          </a>
         </div>
 
-        <header class="header">
-            <div class="header__video-container">
-                <video class="header__video-content" autoplay muted loop>
-                    <source src="/media/header-video-2.mp4" type="video/mp4">
-                    <!-- Sorry, your browser doesn't support embedded videos. -->
-                    <img src="/media/header-image-1.jpg" alt="Sorry, your browser doesn't support embedded videos.">
-                </video>
-            </div>
+        <div class="navigation__btn-bg" id="navi__btn-bg">&nbsp;</div>
+        <div
+          class="navigation__menu-toggle center-content-block--column"
+          id="navi__menu-toggle"
+        >
+          <span class="navigation__menu-icon">&nbsp;</span>
+        </div>
 
-            <div class="header__text">
-                <h1 class="header__heading heading--1">Find Your Tribe,<br>Push Your Limit.</h1>
-                <h2 class="header__subheading heading--2">We bring <span class="text-highlight--1">like-minded
-                        women</span> together and take them on unique <span class="text-highlight--1">outdoor
-                        excursions</span> to<span class="text-highlight--1">bucket-list</span> destinations.</h2>
-            </div>
-        </header>
+        <div class="navigation__menu" id="navi__menu">
+          <ul class="navigation__main">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Adventures</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Blog</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Resources</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contact</a>
+            </li>
+          </ul>
+          <ul class="navigation__sub">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"
+                ><i class="navigation__icon fas fa-user"></i
+              ></a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"
+                ><i class="navigation__icon fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <section class="destinations">
-            <div class="destinations-text center-element">
-                <h2 class="destinations__heading heading--2 text-highlight--2">Choose your next
-                    adventure</h2>
-                <p>We carefully consider which destinations are best for small
-                    groups and broadening your horizons.</p>
-            </div>
+      <header class="header">
+        <div class="header__video-container">
+          <video class="header__video-content" autoplay muted loop>
+            <source src="/media/header-video.webm" type="video/webm" />
+            <source src="/media/header-video.mp4" type="video/mp4" />
+            <!-- Sorry, your browser doesn't support embedded videos. -->
+            <img
+              src="/media/header-image-1.jpg"
+              alt="Sorry, your browser doesn't support embedded videos."
+            />
+          </video>
+        </div>
 
-            <div class="destinations__card-container">
-                <!-- Card #1 -->
-                <div class="card">
-                    <!-- card frontside -->
-                    <div class="card__side card__side--front">
-                        <div class="card__img-container">
-                            <img src="/media/destinations-ebc.png" alt="ebc image" class="card__img">
-                        </div>
-                        <div class="card__heading-container center-element">
-                            <span class="card__subheading text-highlight--1">Nepal</span>
-                            <h3 class="card__heading heading--3">Everest Base Camp</h3>
-                        </div>
-                        <div class="card__details">
-                            <ul class="card__details-list center-element">
-                                <li class="card__tour-length">
-                                    <i class="card__icon far fa-calendar"></i>
-                                    <span>14 Days</span>
-                                </li>
-                                <li class="card__tour-size">
-                                    <i class="card__icon fas fa-user-friends"></i>
-                                    <span>Up to 15 People</span>
-                                </li>
-                                <li class="card__tour-difficulty">
-                                    <i class="card__icon fas fa-hiking"></i>
-                                    <span>Challenging</span>
-                                </li>
-                                <li class="card__tour-type">
-                                    <i class="card__icon fas fa-route"></i>
-                                    <span>Outdoor & Trekking</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="header__text">
+          <h1 class="header__heading heading--1">
+            Find Your Tribe,<br />Push Your Limit.
+          </h1>
+          <h2 class="header__subheading heading--2">
+            We bring
+            <span class="text-highlight--1">like-minded women</span> together
+            and take them on unique
+            <span class="text-highlight--1">outdoor excursions</span> to<span
+              class="text-highlight--1"
+              >bucket-list</span
+            >
+            destinations.
+          </h2>
+        </div>
+      </header>
 
-                    <!-- card backside -->
-                    <div class="card__side card__side--back">
-                        <div class="card__tour-price">
-                            <h4 class="card__price-heading center-element">Price (USD)</h4>
-                            <p class="card__price-text">$2,199</p>
-                        </div>
-                        <div class="card__btn-container center-content-block--column">
-                            <a href="#" class="btn--primary card__btn">BOOK NOW &#10095;</a>
-                        </div>
-                    </div>
-                </div>
+      <section class="destinations">
+        <div class="destinations-text center-element">
+          <h2 class="destinations__heading heading--2 text-highlight--2">
+            Choose your next adventure
+          </h2>
+          <p>
+            We carefully consider which destinations are best for small groups
+            and broadening your horizons.
+          </p>
+        </div>
 
-                <!-- Card #2 -->
-                <div class="card">
-                    <!-- card frontside -->
-                    <div class="card__side card__side--front">
-                        <div class="card__img-container">
-                            <img src="/media/destinations-mp.png" alt="machu picchu image" class="card__img">
-                        </div>
-                        <div class="card__heading-container center-element">
-                            <span class="card__subheading text-highlight--1">Peru</span>
-                            <h3 class="card__heading heading--3">Machu Picchu</h3>
-                        </div>
-                        <div class="card__details">
-                            <ul class="card__details-list center-element">
-                                <li class="card__tour-length">
-                                    <i class="card__icon far fa-calendar"></i>
-                                    <span>8 Days</span>
-                                </li>
-                                <li class="card__tour-size">
-                                    <i class="card__icon fas fa-user-friends"></i>
-                                    <span>Up to 12 People</span>
-                                </li>
-                                <li class="card__tour-difficulty">
-                                    <i class="card__icon fas fa-hiking"></i>
-                                    <span>Easy</span>
-                                </li>
-                                <li class="card__tour-type">
-                                    <i class="card__icon fas fa-route"></i>
-                                    <span>Culture & Trekking</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- card backside -->
-                    <div class="card__side card__side--back">
-                        <div class="card__tour-price">
-                            <h4 class="card__price-heading center-element">Price (USD)</h4>
-                            <p class="card__price-text">$1,980</p>
-                        </div>
-                        <div class="card__btn-container center-content-block--column">
-                            <a href="#" class="btn--primary card__btn">BOOK NOW &#10095;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card #3 -->
-                <div class="card">
-                    <!-- card frontside -->
-                    <div class="card__side card__side--front">
-                        <div class="card__img-container">
-                            <img src="/media/destinations-kilimanjaro.png" alt="kilimanjaro image" class="card__img">
-                        </div>
-                        <div class="card__heading-container center-element">
-                            <span class="card__subheading text-highlight--1">Tanzania</span>
-                            <h3 class="card__heading heading--3">Kilimanjaro</h3>
-                        </div>
-                        <div class="card__details">
-                            <ul class="card__details-list center-element">
-                                <li class="card__tour-length">
-                                    <i class="card__icon far fa-calendar"></i>
-                                    <span>9 Days</span>
-                                </li>
-                                <li class="card__tour-size">
-                                    <i class="card__icon fas fa-user-friends"></i>
-                                    <span>Up to 15 People</span>
-                                </li>
-                                <li class="card__tour-difficulty">
-                                    <i class="card__icon fas fa-hiking"></i>
-                                    <span>Very Challenging</span>
-                                </li>
-                                <li class="card__tour-type">
-                                    <i class="card__icon fas fa-route"></i>
-                                    <span>Trekking & Climbing</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- card backside -->
-                    <div class="card__side card__side--back">
-                        <div class="card__tour-price">
-                            <h4 class="card__price-heading center-element">Price (USD)</h4>
-                            <p class="card__price-text">$3,299</p>
-                        </div>
-                        <div class="card__btn-container center-content-block--column">
-                            <a href="#" class="btn--primary card__btn">BOOK NOW &#10095;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card #4 -->
-                <div class="card">
-                    <!-- card frontside -->
-                    <div class="card__side card__side--front">
-                        <div class="card__img-container">
-                            <img src="/media/destinations-bhutan.png" alt="bhutan image" class="card__img">
-                        </div>
-                        <div class="card__heading-container center-element">
-                            <span class="card__subheading text-highlight--1">Bhutan</span>
-                            <h3 class="card__heading heading--3">Discover Bhutan</h3>
-                        </div>
-                        <div class="card__details">
-                            <ul class="card__details-list center-element">
-                                <li class="card__tour-length">
-                                    <i class="card__icon far fa-calendar"></i>
-                                    <span>10 Days</span>
-                                </li>
-                                <li class="card__tour-size">
-                                    <i class="card__icon fas fa-user-friends"></i>
-                                    <span>Up to 12 People</span>
-                                </li>
-                                <li class="card__tour-difficulty">
-                                    <i class="card__icon fas fa-hiking"></i>
-                                    <span>Easy</span>
-                                </li>
-                                <li class="card__tour-type">
-                                    <i class="card__icon fas fa-route"></i>
-                                    <span>Culture & Hiking</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- card backside -->
-                    <div class="card__side card__side--back">
-                        <div class="card__tour-price">
-                            <h4 class="card__price-heading center-element">Price (USD)</h4>
-                            <p class="card__price-text">$3,499</p>
-                        </div>
-                        <div class="card__btn-container center-content-block--column">
-                            <a href="#" class="btn--primary card__btn">BOOK NOW &#10095;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="demographics">
-            <div class="demo demo__text">
-                <h2 class="demo__heading heading--2 text-highlight--2">Who travel with us?</h2>
-                <p>We are more than a travel company. We are a community connecting women with diverse backgrounds.</p>
-                <p>No matter where we come from, we share the same interests to explore the unknown.</p>
-                <a href="#" class="demo__btn btn--primary--responsive">Join our Facebook Group &#10095;</a>
-            </div>
-            <div class="demo demo__graph-container">
-                <div class="demo__graph-box">
-                    <div class="demo__graph demo__graph--1 center-content-block--row">
-                        <ul class="demo__data demo__data--occupation">
-                            <li>artists</li>
-                            <li>charity workers</li>
-                            <li>full-time mothers</li>
-                            <li>office workers</li>
-                            <li>teachers</li>
-                            <li>etc.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="demo__graph-box">
-                    <div class="demo__graph demo__graph--2 center-content-block--row">
-                        <div class="demo__data demo__data--age">
-                            <p class="demo__data--age--number">22 ~ 64</p>
-                            <h5 class="heading--5 center-element">Age</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="demo__graph-box">
-                    <div class="demo__graph demo__graph--3 center-content-block--row">
-                        <div class="demo__data demo__data--continents center-content-block--column">
-                            <p class="demo__data--continents--number">4</p>
-                            <h5 class="heading--5 demo__data--continents--heading">Continents</h5>
-                        </div>
-                        <div class="demo__data demo__data--countries center-content-block--column">
-                            <p class="demo__data--countries--number">10+</p>
-                            <h5 class="heading--5 demo__data--countries--heading">Countries</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="demo__graph-box">
-                    <div class="demo__graph demo__graph--4 center-content-block--column">
-                        <div class="demo__data demo__data--solo center-content-block--column">
-                            <p class="demo__data--solo--number">78%</p>
-                            <h5 class="heading--5 demo__data--solo--heading">Solo Travelers</h5>
-                        </div>
-                        <div class="demo__data demo__data--group center-content-block--column">
-                            <p class="demo__data--group--number">22%</p>
-                            <h5 class="demo__data--group--heading heading--5 center-element">travel with friends and
-                                families</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="blog">
-
-            <div class="blog__heading-container center-element center-content-block--column">
-                <h2 class="blog__heading heading--2 text-highlight--2">THW Alunae Stories</h2>
-                <p class="blog__intro-text">Life begins outside our comfort zones. It is not easy to get to the
-                    final
-                    destinations, but we support each other to overcome our fears and accomplish things beyond our
-                    wildest dreams.</p>
-                <div class="blog__btn-container">
-                    <a href="#" class="btn--primary">Explore Our Blog &#10095;</a>
-                </div>
-            </div>
-
-            <div class="blog__container">
-                <div class="blog-post blog-post--1">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-1.png" alt="blog post image 1" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">Happy Tears at Everest Base Camp</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Sarah S. | May 10, 2019</h5>
-                        </div>
-                        <p class="blog-post__abstract">Yeah, I cried a little… ok, I cried a lot haha. It was just one
-                            of
-                            those life-changing moments ya know. You can’t speak, you just stare, and breathe, and the
-                            happy
-                            tears come rolling down your
-                            cheeks.</p>
-                        <div class="blog-post__btn-container">
-                            <a href="##" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blog-post blog-post--2">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-2.png" alt="blog post image 2" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">My Raw, Unfiltered Experience to EBC</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Katherine L. | April 16, 2020</h5>
-                        </div>
-                        <p class="blog-post__abstract">My unfiltered experience trekking to Everest Base Camp with a
-                            group
-                            of 13 girls and 5 guides. The good, the bad, the ugly, the celebrations, all of it. Through
-                            sickness, altitude, and the encouragement of the entire group, we all made it. This is the
-                            story
-                            of my experience to EBC.
-                        </p>
-                        <div class="blog-post__btn-container">
-                            <a href="#" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blog-post blog-post--3">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-3.png" alt="blog post image 3" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">My Untold Story: Making a Dream to a Reality</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Janettie W. | March 4, 2019</h5>
-                        </div>
-                        <p class="blog-post__abstract">Flying to Lukla Tenzing-Hillary Airport (2860m), the world’s most
-                            dangerous airport, was scary business. We had 9 days to reach Base Camp with two
-                            acclimatizing
-                            days. The first day we hiked around 4 hours to Phakding (2610m). I prepared well and was
-                            wearing
-                            my knee braces as well as my arm braces as I knew full well
-                            that a decent has more impact on my joints, but I was absolutely fine. All my training has
-                            strengthened my muscles around my joints and was holding it in place.
-                            cheeks.</p>
-                        <div class="blog-post__btn-container">
-                            <a href="#" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blog-post blog-post--4">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-4.png" alt="blog post image 4" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">How a Women's-Only trip to Peru Changed My Life
-                                For
-                                the Better</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Samantha D. | June 5, 2020</h5>
-                        </div>
-                        <p class="blog-post__abstract">If I told you that one trip changed my outlook on life, would you
-                            believe it? If I were you, I’d probably be skeptical. I’m acutely aware of how dramatic it
-                            sounds. Especially when “lifechanging” is thrown around so thoughtlessly these days (I
-                            should
-                            know since I recently described a bottle of red wine as such). But the kind of lifechanging
-                            I’m
-                            talking about is more akin to a shift in perspective, the clarity of the path ahead, the
-                            knowledge of inner acceptance – rather than that of some stimulated taste buds.
-
-                        </p>
-                        <div class="blog-post__btn-container">
-                            <a href="#" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blog-post blog-post--5">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-5.jpg" alt="blog post image 5" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">Traveling to Peru with Travel Her Way</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Mandy S. | January 13, 2020</h5>
-                        </div>
-                        <p class="blog-post__abstract">In September I had one of the greatest group experiences of my
-                            life.
-                            I had the absolute pleasure of joining Travel Her Way – a female-owned and run company that
-                            encourages women to try new things, go new places, and become braver and more confident, all
-                            while developing a deeper appreciation for the amazing world we live in. After being
-                            introduced
-                            to this company through a friend, I just couldn’t say no. </p>
-                        <div class="blog-post__btn-container">
-                            <a href="#" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-post blog-post--6">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-6.jpg" alt="blog post image 6" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">Living My Greatest Life (P1)</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Megan F. | Nov 20, 2020</h5>
-                        </div>
-                        <p class="blog-post__abstract">One word to describe my Everest Base Camp (EBC) Trip would be:
-                            majestic. True beauty can be found everywhere from the smiling faces of the locals, to the
-                            amazingness of momos (Nepalese dumplings) and to the obvious... the views. This opportunity
-                            changed my perspective of the world-for the better.</p>
-                        <div class="blog-post__btn-container">
-                            <a href="#" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-post blog-post--7">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-7.jpg" alt="blog post image 7" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">Trekking to Everest Base Camp</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Lexi B. | February 10, 2020</h5>
-                        </div>
-                        <p class="blog-post__abstract">Three months ago, I made it to the base camp of Mount Everest in
-                            Nepal. It is taking me so long to blog about it, primarily because I don't know where to
-                            start.
-                            I like to write, but when I write, organization is a huge struggle. The fact that there is
-                            so
-                            much to say and so hard to organize it is what has prevented me from writing this. Do you
-                            wanna
-                            hear about my itinerary? My prep? Anecdotes? The culture? My feelings? Things you should
-                            know
-                            before doing this? I'm assuming that I will be writing multiple posts about this adventure
-                            of a
-                            lifetime, so I'll start with the general stuff that I've had the most questions about, let’s
-                            see
-                            where this goes.
-                            cheeks.</p>
-                        <div class="blog-post__btn-container">
-                            <a href="#" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-post blog-post--8">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-8.png" alt="blog post image 8" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">Lacy's Vlog: Everest Base Camp Trek</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Sarah S. | May 10, 2019</h5>
-                        </div>
-                        <p class="blog-post__abstract">Lacy Bauer, who joined our Everest Base Camp Trek in May, has
-                            created
-                            a serious of short videos to blog this life-changing adventure. Lacy has shared how she
-                            learn
-                            and grow and conquer the challenge. We hope you enjoy it!</p>
-                        <div class="blog-post__btn-container">
-                            <a href="#" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-post blog-post--9">
-                    <div class="blog-post__img-container">
-                        <img src="/media/blog-9.jpeg" alt="blog post image 9" class="blog-post__img">
-                    </div>
-                    <div class="blog-post__content-container">
-                        <div class="blog-post__heading-container">
-                            <h4 class="blog-post__heading heading--4">Living My Greatest Life (P1)</h4>
-                            <h5 class="blog-post__sub-heading heading--5">Megan F. | Dec 8, 2020</h5>
-                        </div>
-                        <p class="blog-post__abstract">We started very early, around six in the morning with our
-                            headlamps ready. We knew this would be a long day, 8hrs worth of hiking. Our trek started at
-                            -20 degrees Celsius. I think I had just about every piece of clothing I owned. The hike to
-                            EBC was very cold (obviously the higher we went in altitude) and very windy.</p>
-                        <div class="blog-post__btn-container">
-                            <a href="#" class="blog-post__btn btn-secondary">Continue Reading &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="features__heading-container center-element">
-                <h2 class="features__heading heading--2 text-highlight--2">Why travel with us?</h2>
-            </div>
-
-            <div class="features__container center-element">
-
-                <div class="feature feature--1">
-                    <div class="feature__icon">
-                        <i class="fab fa-gratipay"></i>
-                    </div>
-                    <h3 class="feature__heading heading--3">Like-minded People</h3>
-                    <p class="feature__text">We gather women from all over the world to explore together. Women join us
-                        share the same interests to step outside of their comfort zone and accomplish a lifetime
-                        adventure.
-                    </p>
-                </div>
-
-                <div class="feature feature--2">
-                    <div class="feature__icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <h3 class="feature__heading heading--3">Lifetime Deposit</h3>
-                    <p class="feature__text">Book your trip with a lifetime deposit which never expires. If you cannot
-                        join the trip, you can transfer your deposit to another trip or hold it on file.</p>
-                </div>
-
-                <div class="feature feature--3">
-                    <div class="feature__icon">
-                        <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <h3 class="feature__heading heading--3">Pay in Installments</h3>
-                    <p class="feature__text">Book your trip with a deposit and pay the rest in installments whenever you
-                        like. No interests. No fees.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="newsletter">
-            <div class="newsletter__container">
-                <form action="" class="form">
-                    <div class="form__text center-element">
-                        <h3 class="form__heading heading--3">Let's stay connected!</h3>
-                        <p class="form__subheading"> Subscribe to our new adventures, special
-                            offers, and travel stories from our favorite adventuresses!</p>
-                    </div>
-                    <div class="form__fields center-content-block--column">
-                        <div class="form__group">
-                            <input type="text" class="form__input" name="name" id="name" placeholder="Name" required>
-                            <label for="name" class="form__label"></label>
-                        </div>
-
-                        <div class="form__group">
-                            <input type="text" class="form__input" name="email" id="email" placeholder="Email" required>
-                            <label for="email"></label>
-                        </div>
-
-                        <div class="form__group center-element">
-                            <input type="submit" class="form__input form__btn btn--primary" value="Subscribe &#10095;">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section class="gallery">
-            <figure class="gallery__item gallery__item--1">
-                <img src="/media/gallery-1.png" alt="gallery image 1" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--2">
-                <img src="/media/gallery-2.png" alt="gallery image 2" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--3">
-                <img src="/media/gallery-3.jpg" alt="gallery image 3" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--4">
-                <img src="/media/gallery-4.png" alt="gallery image 4" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--5">
-                <img src="/media/gallery-5.png" alt="gallery image 5" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--6">
-                <img src="/media/gallery-6.jpg" alt="gallery image 6" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--7">
-                <img src="/media/gallery-7.jpg" alt="gallery image 7" class="gallery__img">
-            </figure>
-            <figure class="gallery__item gallery__item--8">
-                <img src="/media/gallery-8.png" alt="gallery image 8" class="gallery__img">
-            </figure>
-        </section>
-
-        <footer class="footer">
-            <div class="footer__block footer__contact">
-                <h4 class="footer__heading heading--4">Contact us</h4>
-                <p>Mon - Fri: 9am - 5pm CST</p>
-                <ul class="footer__list footer__contact-list">
-                    <li><a href="#" class="footer__link"><i class="footer__icon fas fa-envelope"></i>info@thw.com</a>
-                    </li>
-                    <li><i class="footer__icon fas fa-phone"></i>222-888-888</li>
-                    <li><i class="footer__icon fas fa-sms"></i>222-888-888</li>
+        <div class="destinations__card-container">
+          <!-- Card #1 -->
+          <div class="card">
+            <!-- card frontside -->
+            <div class="card__side card__side--front">
+              <div class="card__img-container">
+                <img
+                  src="/media/destinations-ebc.png"
+                  alt="ebc image"
+                  class="card__img"
+                />
+              </div>
+              <div class="card__heading-container center-element">
+                <span class="card__subheading text-highlight--1">Nepal</span>
+                <h3 class="card__heading heading--3">Everest Base Camp</h3>
+              </div>
+              <div class="card__details">
+                <ul class="card__details-list center-element">
+                  <li class="card__tour-length">
+                    <i class="card__icon far fa-calendar"></i>
+                    <span>14 Days</span>
+                  </li>
+                  <li class="card__tour-size">
+                    <i class="card__icon fas fa-user-friends"></i>
+                    <span>Up to 15 People</span>
+                  </li>
+                  <li class="card__tour-difficulty">
+                    <i class="card__icon fas fa-hiking"></i>
+                    <span>Challenging</span>
+                  </li>
+                  <li class="card__tour-type">
+                    <i class="card__icon fas fa-route"></i>
+                    <span>Outdoor & Trekking</span>
+                  </li>
                 </ul>
-            </div>
-            <div class="footer__block footer__adventures">
-                <h4 class="footer__heading heading--4">Adventures</h4>
-                <ul class="footer__list footer__adventures-list">
-                    <li class="footer__item"><a href="#" class="footer__link">Everest Base Camp Trek</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Discover Bhutan</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Inca Jungle Trek to Machu Picchu</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Kilimanjaro Climb</a></li>
-                </ul>
+              </div>
             </div>
 
-            <div class="footer__block footer__pre-departure">
-                <h4 class="footer__heading heading--4">Pre-Departure Guide</h4>
-                <ul class="footer__list footer__pre-departure-list">
-                    <li class="footer__item"><a href="#" class="footer__link">Everest Base Camp Trek</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Discover Bhutan</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Inca Jungle Trek to Machu Picchu</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Kilimanjaro Climb</a></li>
-                </ul>
+            <!-- card backside -->
+            <div class="card__side card__side--back">
+              <div class="card__tour-price">
+                <h4 class="card__price-heading center-element">Price (USD)</h4>
+                <p class="card__price-text">$2,199</p>
+              </div>
+              <div class="card__btn-container center-content-block--column">
+                <a href="#" class="btn--primary card__btn">BOOK NOW &#10095;</a>
+              </div>
             </div>
-            <div class="footer__block footer__about">
-                <h4 class="footer__heading heading--4">About</h4>
-                <ul class="footer__list footer__about-list">
-                    <li class="footer__item"><a href="#" class="footer__link">About us</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Testimonials</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Press</a></li>
+          </div>
+
+          <!-- Card #2 -->
+          <div class="card">
+            <!-- card frontside -->
+            <div class="card__side card__side--front">
+              <div class="card__img-container">
+                <img
+                  src="/media/destinations-mp.png"
+                  alt="machu picchu image"
+                  class="card__img"
+                />
+              </div>
+              <div class="card__heading-container center-element">
+                <span class="card__subheading text-highlight--1">Peru</span>
+                <h3 class="card__heading heading--3">Machu Picchu</h3>
+              </div>
+              <div class="card__details">
+                <ul class="card__details-list center-element">
+                  <li class="card__tour-length">
+                    <i class="card__icon far fa-calendar"></i>
+                    <span>8 Days</span>
+                  </li>
+                  <li class="card__tour-size">
+                    <i class="card__icon fas fa-user-friends"></i>
+                    <span>Up to 12 People</span>
+                  </li>
+                  <li class="card__tour-difficulty">
+                    <i class="card__icon fas fa-hiking"></i>
+                    <span>Easy</span>
+                  </li>
+                  <li class="card__tour-type">
+                    <i class="card__icon fas fa-route"></i>
+                    <span>Culture & Trekking</span>
+                  </li>
                 </ul>
+              </div>
             </div>
 
-            <div class="footer__block footer__join-us">
-                <h4 class="footer__heading heading--4">Join us</h4>
-                <ul class="footer__list footer__join-us-list">
-                    <li class="footer__item"><a href="#" class="footer__link">Become a blog contributor</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Become a brand ambassador</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Become a group leader</a></li>
-                </ul>
+            <!-- card backside -->
+            <div class="card__side card__side--back">
+              <div class="card__tour-price">
+                <h4 class="card__price-heading center-element">Price (USD)</h4>
+                <p class="card__price-text">$1,980</p>
+              </div>
+              <div class="card__btn-container center-content-block--column">
+                <a href="#" class="btn--primary card__btn">BOOK NOW &#10095;</a>
+              </div>
             </div>
-            <div class="footer__block footer__legal">
-                <h4 class="footer__heading heading--4">Legal</h4>
-                <ul class="footer__list footer__legal-list">
-                    <li class="footer__item"><a href="#" class="footer__link">Terms and Conditions</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Privacy Statement</a></li>
+          </div>
+
+          <!-- Card #3 -->
+          <div class="card">
+            <!-- card frontside -->
+            <div class="card__side card__side--front">
+              <div class="card__img-container">
+                <img
+                  src="/media/destinations-kilimanjaro.png"
+                  alt="kilimanjaro image"
+                  class="card__img"
+                />
+              </div>
+              <div class="card__heading-container center-element">
+                <span class="card__subheading text-highlight--1">Tanzania</span>
+                <h3 class="card__heading heading--3">Kilimanjaro</h3>
+              </div>
+              <div class="card__details">
+                <ul class="card__details-list center-element">
+                  <li class="card__tour-length">
+                    <i class="card__icon far fa-calendar"></i>
+                    <span>9 Days</span>
+                  </li>
+                  <li class="card__tour-size">
+                    <i class="card__icon fas fa-user-friends"></i>
+                    <span>Up to 15 People</span>
+                  </li>
+                  <li class="card__tour-difficulty">
+                    <i class="card__icon fas fa-hiking"></i>
+                    <span>Very Challenging</span>
+                  </li>
+                  <li class="card__tour-type">
+                    <i class="card__icon fas fa-route"></i>
+                    <span>Trekking & Climbing</span>
+                  </li>
                 </ul>
-            </div>
-            <div class="footer__block footer__download">
-                <h4 class="footer__heading heading--4">Download Forms</h4>
-                <ul class="footer__list footer__download-list">
-                    <li class="footer__item"><a href="#" class="footer__link">Medical Information Form</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Parental Consent Guardianship Form</a>
-                    </li>
-                </ul>
+              </div>
             </div>
 
-            <div class="footer__block footer__faq">
-                <h4 class="footer__heading heading--4"><a href="#" class="footer__link">Frequently Asked Questions</a>
+            <!-- card backside -->
+            <div class="card__side card__side--back">
+              <div class="card__tour-price">
+                <h4 class="card__price-heading center-element">Price (USD)</h4>
+                <p class="card__price-text">$3,299</p>
+              </div>
+              <div class="card__btn-container center-content-block--column">
+                <a href="#" class="btn--primary card__btn">BOOK NOW &#10095;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card #4 -->
+          <div class="card">
+            <!-- card frontside -->
+            <div class="card__side card__side--front">
+              <div class="card__img-container">
+                <img
+                  src="/media/destinations-bhutan.png"
+                  alt="bhutan image"
+                  class="card__img"
+                />
+              </div>
+              <div class="card__heading-container center-element">
+                <span class="card__subheading text-highlight--1">Bhutan</span>
+                <h3 class="card__heading heading--3">Discover Bhutan</h3>
+              </div>
+              <div class="card__details">
+                <ul class="card__details-list center-element">
+                  <li class="card__tour-length">
+                    <i class="card__icon far fa-calendar"></i>
+                    <span>10 Days</span>
+                  </li>
+                  <li class="card__tour-size">
+                    <i class="card__icon fas fa-user-friends"></i>
+                    <span>Up to 12 People</span>
+                  </li>
+                  <li class="card__tour-difficulty">
+                    <i class="card__icon fas fa-hiking"></i>
+                    <span>Easy</span>
+                  </li>
+                  <li class="card__tour-type">
+                    <i class="card__icon fas fa-route"></i>
+                    <span>Culture & Hiking</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- card backside -->
+            <div class="card__side card__side--back">
+              <div class="card__tour-price">
+                <h4 class="card__price-heading center-element">Price (USD)</h4>
+                <p class="card__price-text">$3,499</p>
+              </div>
+              <div class="card__btn-container center-content-block--column">
+                <a href="#" class="btn--primary card__btn">BOOK NOW &#10095;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="demographics">
+        <div class="demo demo__text">
+          <h2 class="demo__heading heading--2 text-highlight--2">
+            Who travel with us?
+          </h2>
+          <p>
+            We are more than a travel company. We are a community connecting
+            women with diverse backgrounds.
+          </p>
+          <p>
+            No matter where we come from, we share the same interests to explore
+            the unknown.
+          </p>
+          <a href="#" class="demo__btn btn--primary--responsive"
+            >Join our Facebook Group &#10095;</a
+          >
+        </div>
+        <div class="demo demo__graph-container">
+          <div class="demo__graph-box">
+            <div class="demo__graph demo__graph--1 center-content-block--row">
+              <ul class="demo__data demo__data--occupation">
+                <li>artists</li>
+                <li>charity workers</li>
+                <li>full-time mothers</li>
+                <li>office workers</li>
+                <li>teachers</li>
+                <li>etc.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="demo__graph-box">
+            <div class="demo__graph demo__graph--2 center-content-block--row">
+              <div class="demo__data demo__data--age">
+                <p class="demo__data--age--number">22 ~ 64</p>
+                <h5 class="heading--5 center-element">Age</h5>
+              </div>
+            </div>
+          </div>
+          <div class="demo__graph-box">
+            <div class="demo__graph demo__graph--3 center-content-block--row">
+              <div
+                class="demo__data demo__data--continents center-content-block--column"
+              >
+                <p class="demo__data--continents--number">4</p>
+                <h5 class="heading--5 demo__data--continents--heading">
+                  Continents
+                </h5>
+              </div>
+              <div
+                class="demo__data demo__data--countries center-content-block--column"
+              >
+                <p class="demo__data--countries--number">10+</p>
+                <h5 class="heading--5 demo__data--countries--heading">
+                  Countries
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="demo__graph-box">
+            <div
+              class="demo__graph demo__graph--4 center-content-block--column"
+            >
+              <div
+                class="demo__data demo__data--solo center-content-block--column"
+              >
+                <p class="demo__data--solo--number">78%</p>
+                <h5 class="heading--5 demo__data--solo--heading">
+                  Solo Travelers
+                </h5>
+              </div>
+              <div
+                class="demo__data demo__data--group center-content-block--column"
+              >
+                <p class="demo__data--group--number">22%</p>
+                <h5
+                  class="demo__data--group--heading heading--5 center-element"
+                >
+                  travel with friends and families
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div
+          class="blog__heading-container center-element center-content-block--column"
+        >
+          <h2 class="blog__heading heading--2 text-highlight--2">
+            THW Alunae Stories
+          </h2>
+          <p class="blog__intro-text">
+            Life begins outside our comfort zones. It is not easy to get to the
+            final destinations, but we support each other to overcome our fears
+            and accomplish things beyond our wildest dreams.
+          </p>
+          <div class="blog__btn-container">
+            <a href="#" class="btn--primary">Explore Our Blog &#10095;</a>
+          </div>
+        </div>
+
+        <div class="blog__container">
+          <div class="blog-post blog-post--1">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-1.png"
+                alt="blog post image 1"
+                class="blog-post__img"
+              />
+            </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  Happy Tears at Everest Base Camp
                 </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Sarah S. | May 10, 2019
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                Yeah, I cried a little… ok, I cried a lot haha. It was just one
+                of those life-changing moments ya know. You can’t speak, you
+                just stare, and breathe, and the happy tears come rolling down
+                your cheeks.
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="##" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
             </div>
-            <div class="footer__block footer__covid">
-                <h4 class="footer__heading heading--4"><a href="#" class="footer__link">COVID-19 Information</a></h4>
+          </div>
+
+          <div class="blog-post blog-post--2">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-2.png"
+                alt="blog post image 2"
+                class="blog-post__img"
+              />
             </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  My Raw, Unfiltered Experience to EBC
+                </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Katherine L. | April 16, 2020
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                My unfiltered experience trekking to Everest Base Camp with a
+                group of 13 girls and 5 guides. The good, the bad, the ugly, the
+                celebrations, all of it. Through sickness, altitude, and the
+                encouragement of the entire group, we all made it. This is the
+                story of my experience to EBC.
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="#" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
 
+          <div class="blog-post blog-post--3">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-3.png"
+                alt="blog post image 3"
+                class="blog-post__img"
+              />
+            </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  My Untold Story: Making a Dream to a Reality
+                </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Janettie W. | March 4, 2019
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                Flying to Lukla Tenzing-Hillary Airport (2860m), the world’s
+                most dangerous airport, was scary business. We had 9 days to
+                reach Base Camp with two acclimatizing days. The first day we
+                hiked around 4 hours to Phakding (2610m). I prepared well and
+                was wearing my knee braces as well as my arm braces as I knew
+                full well that a decent has more impact on my joints, but I was
+                absolutely fine. All my training has strengthened my muscles
+                around my joints and was holding it in place. cheeks.
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="#" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
 
-        </footer>
+          <div class="blog-post blog-post--4">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-4.png"
+                alt="blog post image 4"
+                class="blog-post__img"
+              />
+            </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  How a Women's-Only trip to Peru Changed My Life For the Better
+                </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Samantha D. | June 5, 2020
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                If I told you that one trip changed my outlook on life, would
+                you believe it? If I were you, I’d probably be skeptical. I’m
+                acutely aware of how dramatic it sounds. Especially when
+                “lifechanging” is thrown around so thoughtlessly these days (I
+                should know since I recently described a bottle of red wine as
+                such). But the kind of lifechanging I’m talking about is more
+                akin to a shift in perspective, the clarity of the path ahead,
+                the knowledge of inner acceptance – rather than that of some
+                stimulated taste buds.
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="#" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-post blog-post--5">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-5.jpg"
+                alt="blog post image 5"
+                class="blog-post__img"
+              />
+            </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  Traveling to Peru with Travel Her Way
+                </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Mandy S. | January 13, 2020
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                In September I had one of the greatest group experiences of my
+                life. I had the absolute pleasure of joining Travel Her Way – a
+                female-owned and run company that encourages women to try new
+                things, go new places, and become braver and more confident, all
+                while developing a deeper appreciation for the amazing world we
+                live in. After being introduced to this company through a
+                friend, I just couldn’t say no.
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="#" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="blog-post blog-post--6">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-6.jpg"
+                alt="blog post image 6"
+                class="blog-post__img"
+              />
+            </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  Living My Greatest Life (P1)
+                </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Megan F. | Nov 20, 2020
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                One word to describe my Everest Base Camp (EBC) Trip would be:
+                majestic. True beauty can be found everywhere from the smiling
+                faces of the locals, to the amazingness of momos (Nepalese
+                dumplings) and to the obvious... the views. This opportunity
+                changed my perspective of the world-for the better.
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="#" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="blog-post blog-post--7">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-7.jpg"
+                alt="blog post image 7"
+                class="blog-post__img"
+              />
+            </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  Trekking to Everest Base Camp
+                </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Lexi B. | February 10, 2020
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                Three months ago, I made it to the base camp of Mount Everest in
+                Nepal. It is taking me so long to blog about it, primarily
+                because I don't know where to start. I like to write, but when I
+                write, organization is a huge struggle. The fact that there is
+                so much to say and so hard to organize it is what has prevented
+                me from writing this. Do you wanna hear about my itinerary? My
+                prep? Anecdotes? The culture? My feelings? Things you should
+                know before doing this? I'm assuming that I will be writing
+                multiple posts about this adventure of a lifetime, so I'll start
+                with the general stuff that I've had the most questions about,
+                let’s see where this goes. cheeks.
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="#" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="blog-post blog-post--8">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-8.png"
+                alt="blog post image 8"
+                class="blog-post__img"
+              />
+            </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  Lacy's Vlog: Everest Base Camp Trek
+                </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Sarah S. | May 10, 2019
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                Lacy Bauer, who joined our Everest Base Camp Trek in May, has
+                created a serious of short videos to blog this life-changing
+                adventure. Lacy has shared how she learn and grow and conquer
+                the challenge. We hope you enjoy it!
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="#" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="blog-post blog-post--9">
+            <div class="blog-post__img-container">
+              <img
+                src="/media/blog-9.jpeg"
+                alt="blog post image 9"
+                class="blog-post__img"
+              />
+            </div>
+            <div class="blog-post__content-container">
+              <div class="blog-post__heading-container">
+                <h4 class="blog-post__heading heading--4">
+                  Living My Greatest Life (P1)
+                </h4>
+                <h5 class="blog-post__sub-heading heading--5">
+                  Megan F. | Dec 8, 2020
+                </h5>
+              </div>
+              <p class="blog-post__abstract">
+                We started very early, around six in the morning with our
+                headlamps ready. We knew this would be a long day, 8hrs worth of
+                hiking. Our trek started at -20 degrees Celsius. I think I had
+                just about every piece of clothing I owned. The hike to EBC was
+                very cold (obviously the higher we went in altitude) and very
+                windy.
+              </p>
+              <div class="blog-post__btn-container">
+                <a href="#" class="blog-post__btn btn-secondary"
+                  >Continue Reading &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__heading-container center-element">
+          <h2 class="features__heading heading--2 text-highlight--2">
+            Why travel with us?
+          </h2>
+        </div>
+
+        <div class="features__container center-element">
+          <div class="feature feature--1">
+            <div class="feature__icon">
+              <i class="fab fa-gratipay"></i>
+            </div>
+            <h3 class="feature__heading heading--3">Like-minded People</h3>
+            <p class="feature__text">
+              We gather women from all over the world to explore together. Women
+              join us share the same interests to step outside of their comfort
+              zone and accomplish a lifetime adventure.
+            </p>
+          </div>
+
+          <div class="feature feature--2">
+            <div class="feature__icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3 class="feature__heading heading--3">Lifetime Deposit</h3>
+            <p class="feature__text">
+              Book your trip with a lifetime deposit which never expires. If you
+              cannot join the trip, you can transfer your deposit to another
+              trip or hold it on file.
+            </p>
+          </div>
+
+          <div class="feature feature--3">
+            <div class="feature__icon">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <h3 class="feature__heading heading--3">Pay in Installments</h3>
+            <p class="feature__text">
+              Book your trip with a deposit and pay the rest in installments
+              whenever you like. No interests. No fees.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter__container">
+          <form action="" class="form">
+            <div class="form__text center-element">
+              <h3 class="form__heading heading--3">Let's stay connected!</h3>
+              <p class="form__subheading">
+                Subscribe to our new adventures, special offers, and travel
+                stories from our favorite adventuresses!
+              </p>
+            </div>
+            <div class="form__fields center-content-block--column">
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+                <label for="name" class="form__label"></label>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <label for="email"></label>
+              </div>
+
+              <div class="form__group center-element">
+                <input
+                  type="submit"
+                  class="form__input form__btn btn--primary"
+                  value="Subscribe &#10095;"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img
+            src="/media/gallery-1.png"
+            alt="gallery image 1"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img
+            src="/media/gallery-2.png"
+            alt="gallery image 2"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img
+            src="/media/gallery-3.jpg"
+            alt="gallery image 3"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img
+            src="/media/gallery-4.png"
+            alt="gallery image 4"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img
+            src="/media/gallery-5.png"
+            alt="gallery image 5"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img
+            src="/media/gallery-6.jpg"
+            alt="gallery image 6"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--7">
+          <img
+            src="/media/gallery-7.jpg"
+            alt="gallery image 7"
+            class="gallery__img"
+          />
+        </figure>
+        <figure class="gallery__item gallery__item--8">
+          <img
+            src="/media/gallery-8.png"
+            alt="gallery image 8"
+            class="gallery__img"
+          />
+        </figure>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__block footer__contact">
+          <h4 class="footer__heading heading--4">Contact us</h4>
+          <p>Mon - Fri: 9am - 5pm CST</p>
+          <ul class="footer__list footer__contact-list">
+            <li>
+              <a href="#" class="footer__link"
+                ><i class="footer__icon fas fa-envelope"></i>info@thw.com</a
+              >
+            </li>
+            <li><i class="footer__icon fas fa-phone"></i>222-888-888</li>
+            <li><i class="footer__icon fas fa-sms"></i>222-888-888</li>
+          </ul>
+        </div>
+        <div class="footer__block footer__adventures">
+          <h4 class="footer__heading heading--4">Adventures</h4>
+          <ul class="footer__list footer__adventures-list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Everest Base Camp Trek</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Discover Bhutan</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                >Inca Jungle Trek to Machu Picchu</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Kilimanjaro Climb</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__block footer__pre-departure">
+          <h4 class="footer__heading heading--4">Pre-Departure Guide</h4>
+          <ul class="footer__list footer__pre-departure-list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Everest Base Camp Trek</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Discover Bhutan</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                >Inca Jungle Trek to Machu Picchu</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Kilimanjaro Climb</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block footer__about">
+          <h4 class="footer__heading heading--4">About</h4>
+          <ul class="footer__list footer__about-list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">About us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Testimonials</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Press</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__block footer__join-us">
+          <h4 class="footer__heading heading--4">Join us</h4>
+          <ul class="footer__list footer__join-us-list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Become a blog contributor</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Become a brand ambassador</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Become a group leader</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block footer__legal">
+          <h4 class="footer__heading heading--4">Legal</h4>
+          <ul class="footer__list footer__legal-list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Terms and Conditions</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Statement</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block footer__download">
+          <h4 class="footer__heading heading--4">Download Forms</h4>
+          <ul class="footer__list footer__download-list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Medical Information Form</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                >Parental Consent Guardianship Form</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__block footer__faq">
+          <h4 class="footer__heading heading--4">
+            <a href="#" class="footer__link">Frequently Asked Questions</a>
+          </h4>
+        </div>
+        <div class="footer__block footer__covid">
+          <h4 class="footer__heading heading--4">
+            <a href="#" class="footer__link">COVID-19 Information</a>
+          </h4>
+        </div>
+      </footer>
     </div>
 
     <div class="social-media center-element">
-        <div class="social-media__instagram">
-            <a href="#" class="social-media__link"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="social-media__facebook">
-            <a href="#" class="social-media__link"><i class="fab fa-facebook-f"></i></a>
-        </div>
+      <div class="social-media__instagram">
+        <a href="#" class="social-media__link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <div class="social-media__facebook">
+        <a href="#" class="social-media__link"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

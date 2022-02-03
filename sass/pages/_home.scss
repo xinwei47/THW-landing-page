@@ -1,131 +1,136 @@
 .destinations {
-    grid-column: center-start / center-end;
+  grid-column: center-start / center-end;
 
-    &__heading {
-        margin: $header-margin;
-    }
-    &__card-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
-        column-gap: 6rem;
-        row-gap: 6rem;
+  &__heading {
+    margin: $header-margin;
+  }
+  &__card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    column-gap: 6rem;
+    row-gap: 6rem;
 
-        margin: $margin-lg 0;
-    }
+    margin: $margin-lg 0;
+  }
 }
 
 .demographics {
-    grid-column: center-start / center-end;
+  grid-column: center-start / center-end;
 
-    display: grid;
-    grid-template-columns: 1fr 600px;
-    column-gap: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  column-gap: 6rem;
 
-    .demo__heading {
-        margin: $header-margin;
-    }
+  .demo__heading {
+    margin: $header-margin;
+  }
 
-    .demo__btn {
-        margin-top: $margin-md;
-    }
+  .demo__btn {
+    margin-top: $margin-md;
+  }
 
-    @media only screen and (max-width: $bp-lg) {
-        grid-template-columns: min-content;
+  @media only screen and (max-width: $bp-lg) {
+    grid-template-columns: min-content;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .blog {
-    grid-column: full-start / full-end;
+  grid-column: full-start / full-end;
 
-    &__heading-container {
-        width: 80%;
-        margin: auto;
-        margin-bottom: $margin-lg;
+  &__heading-container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: $margin-lg;
 
-        @media only screen and (max-width: $bp-md) {
-            margin-bottom: $margin-xs;
-        }
+    @media only screen and (max-width: $bp-md) {
+      margin-bottom: $margin-xs;
     }
+  }
 
-    &__heading {
-        @media only screen and (max-width: $bp-md) {
-            font-size: 2.4rem;
-            line-height: 1;
-        }
+  &__heading {
+    @media only screen and (max-width: $bp-md) {
+      font-size: 2.4rem;
+      line-height: 1;
     }
+  }
 
-    &__intro-text {
-        margin: $margin-md 0;
+  &__intro-text {
+    margin: $margin-md 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100vw / 3));
+
+    @media only screen and (max-width: $bp-md), only screen and (hover: none) {
+      grid-template-columns: repeat(9, calc(100vw / 1.8));
+      row-gap: $grid-gap-lg;
+      column-gap: $grid-gap-sm;
+      overflow: scroll;
     }
-
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(3, calc(100vw / 3));
-
-        @media only screen and (max-width: $bp-md), only screen and (hover: none) {
-            grid-template-columns: repeat(9, calc(100vw / 1.8));
-            row-gap: $grid-gap-lg;
-            column-gap: $grid-gap-sm;
-            overflow: scroll;
-        }
-    }
+  }
 }
 
 .features {
-    grid-column: center-start / center-end;
-    margin: $margin-xl 0;
+  grid-column: center-start / center-end;
+  margin: $margin-xl 0;
 
-    &__heading-container {
-        margin-bottom: $margin-lg;
+  &__heading-container {
+    margin-bottom: $margin-lg;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    column-gap: $grid-gap-lg;
+
+    @media only screen and (max-width: $bp-lg) {
+      grid-template-columns: 1fr;
     }
-
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(min-content, 1fr));
-        column-gap: $grid-gap-lg;
-
-        @media only screen and (max-width: $bp-lg) {
-            grid-template-columns: 1fr;
-        }
-    }
+  }
 }
 
 .newsletter {
-    background: linear-gradient(180deg, rgba($color-white, 0.6), rgba($color-white, 0.6)), url(/media/newsletter.png);
-    background-size: cover;
-    background-position: center;
+  background: linear-gradient(
+      180deg,
+      rgba($color-white, 0.6),
+      rgba($color-white, 0.6)
+    ),
+    url(/media/newsletter.png);
+  background-size: cover;
+  background-position: center;
 
-    grid-column: full-start / full-end;
+  grid-column: full-start / full-end;
 
-    &__container {
-        max-width: 80%;
-        margin: $margin-md auto;
-    }
+  &__container {
+    max-width: 80%;
+    margin: $margin-md auto;
+  }
 }
 
 .social-media {
-    background-color: $color-secondary;
-    padding: $padding-xs 0;
+  background-color: $color-secondary;
+  padding: $padding-xs 0;
 
-    &__link {
-        &,
-        &:link,
-        &:visited {
-            color: $color-white;
-            font-size: 2.4rem;
-        }
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: $color-white;
+      font-size: 2.4rem;
     }
+  }
 
-    &__instagram,
-    &__facebook {
-        display: inline-block;
-    }
+  &__instagram,
+  &__facebook {
+    display: inline-block;
+  }
 
-    &__instagram {
-        margin-right: $margin-md;
-    }
+  &__instagram {
+    margin-right: $margin-md;
+  }
 }
