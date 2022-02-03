@@ -1,48 +1,54 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    height: 100%;
-    width: 100%;
-    font-size: 62.5%; // 10px
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%; // 10px
+  overflow-x: hidden;
+  position: relative;
 
-    @media only screen and (max-width: $bp-lg) {
-        font-size: 56.25%; // 9px
-    }
+  @media only screen and (max-width: $bp-lg) {
+    font-size: 56.25%; // 9px
+  }
 
-    @media only screen and (max-width: $bp-xs) {
-        font-size: 43.75%; // 7px
-    }
+  @media only screen and (max-width: $bp-xs) {
+    font-size: 43.75%; // 7px
+  }
 
-    @media only screen and (max-width: $bp-xxs) {
-        font-size: 31.25%; // 5px
-    }
+  @media only screen and (max-width: $bp-xxs) {
+    font-size: 31.25%; // 5px
+  }
 }
 
 body {
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-
-    position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .container {
-    // announcement is not part of the grid
-    width: 100%;
-    display: grid;
-    grid-template-rows: calc(min-content + 4rem) calc(90vh - 12rem) repeat(6, min-content);
-    grid-template-columns:
-        [full-start] minmax(6rem, 1fr)
-        [center-start] repeat(12, [col-start] minmax(0, 9.5rem) [col-end]) [center-end] // 1140 / 12 = 95
-        minmax(4rem, 1fr) [full-end];
+  // announcement is not part of the grid
+  width: 100%;
+  display: grid;
+  grid-template-rows: calc(min-content + 4rem) calc(90vh - 12rem) repeat(
+      6,
+      min-content
+    );
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(12, [col-start] minmax(0, 9.5rem) [col-end])
+    [center-end] // 1140 / 12 = 95
+    minmax(4rem, 1fr) [full-end];
 
-    @media only screen and (max-width: $bp-lg) {
-        grid-template-rows: 0 calc(90vh - 12rem) repeat(6, min-content);
-    }
+  @media only screen and (max-width: $bp-lg) {
+    grid-template-rows: 0 calc(90vh - 12rem) repeat(6, min-content);
+  }
 }
