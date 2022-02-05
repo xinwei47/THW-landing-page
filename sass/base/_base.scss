@@ -18,11 +18,7 @@ html {
   }
 
   @media only screen and (max-width: $bp-xs) {
-    font-size: 43.75%; // 7px
-  }
-
-  @media only screen and (max-width: $bp-xxs) {
-    font-size: 31.25%; // 5px
+    font-size: 50%; // 8px
   }
 }
 
@@ -50,5 +46,10 @@ body {
 
   @media only screen and (max-width: $bp-lg) {
     grid-template-rows: 0 calc(90vh - 12rem) repeat(6, min-content);
+    grid-template-columns:
+      [full-start] minmax(2rem, 1fr)
+      [center-start] repeat(12, [col-start] minmax(0, 9.5rem) [col-end])
+      [center-end] // 1140 / 12 = 95
+      minmax(2rem, 1fr) [full-end];
   }
 }

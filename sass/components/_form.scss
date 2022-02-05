@@ -1,54 +1,62 @@
 .form {
-    padding: $padding-md $padding-lg;
+  padding: $padding-md $padding-lg;
 
-    &__heading {
-        color: $color-secondary;
+  @media only screen and (max-width: $bp-sm) {
+    padding: 0 0;
+  }
+
+  &__heading {
+    color: $color-secondary;
+  }
+
+  &__subheading {
+    margin: $margin-sm 0;
+  }
+
+  &__fields {
+    max-width: 60%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-sm) {
+      max-width: 80%;
+    }
+  }
+
+  &__group {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: $margin-sm;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: inherit;
+    width: 100%;
+    padding: $padding-xs;
+    border: 3px solid transparent;
+
+    &:not(:last-child) {
+      border-radius: $border-radius-sm;
     }
 
-    &__subheading {
-        margin: $margin-sm 0;
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $color-primary-dark;
     }
 
-    &__fields {
-        max-width: 60%;
-        margin: 0 auto;
+    &:focus:invalid {
+      border-bottom: 3px solid $color-highlight;
     }
+  }
 
-    &__group {
-        width: 100%;
-
-        &:not(:last-child) {
-            margin-bottom: $margin-sm;
-        }
+  &__btn {
+    &,
+    &:link,
+    &:visited {
+      border: none;
     }
-
-    &__input {
-        box-sizing: content-box;
-        font-size: 1.6rem;
-        font-family: inherit;
-        width: 100%;
-        padding: $padding-xs;
-        border: 3px solid transparent;
-
-        &:not(:last-child) {
-            border-radius: $border-radius-sm;
-        }
-
-        &:focus {
-            outline: none;
-            border-bottom: 3px solid $color-primary-dark;
-        }
-
-        &:focus:invalid {
-            border-bottom: 3px solid $color-highlight;
-        }
-    }
-
-    &__btn {
-        &,
-        &:link,
-        &:visited {
-            border: none;
-        }
-    }
+  }
 }

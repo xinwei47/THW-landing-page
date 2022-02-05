@@ -7,10 +7,10 @@
   &__card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
-    column-gap: 6rem;
-    row-gap: 6rem;
+    column-gap: $grid-gap-md;
+    row-gap: $grid-gap-md;
 
-    margin: $margin-lg 0;
+    margin: $margin-md 0;
   }
 }
 
@@ -67,9 +67,9 @@
     grid-template-columns: repeat(3, calc(100vw / 3));
 
     @media only screen and (max-width: $bp-md), only screen and (hover: none) {
-      grid-template-columns: repeat(9, calc(100vw / 1.8));
+      grid-template-columns: repeat(9, calc(100vw / 1.4));
       row-gap: $grid-gap-lg;
-      column-gap: $grid-gap-sm;
+      column-gap: $grid-gap-xs;
       overflow: scroll;
     }
   }
@@ -108,7 +108,7 @@
 
   &__container {
     max-width: 80%;
-    margin: $margin-md auto;
+    margin: $margin-lg auto;
   }
 }
 

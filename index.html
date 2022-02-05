@@ -64,9 +64,15 @@
         <div class="navigation__logo-box">
           <a href="#" class="navigation__logo-link">
             <img
-              src="/media/logo.png"
+              src="/media/logo-black.svg"
               alt="company logo"
-              class="navigation__logo"
+              class="navigation__logo navigation__logo-black"
+            />
+
+            <img
+              src="/media/logo-white.svg"
+              alt="company logo"
+              class="navigation__logo navigation__logo-white"
             />
           </a>
         </div>
@@ -114,7 +120,7 @@
 
       <header class="header">
         <div class="header__video-container">
-          <video class="header__video-content" autoplay muted loop>
+          <video class="header__video-content" playsinline autoplay muted loop>
             <source src="/media/header-video.webm" type="video/webm" />
             <source src="/media/header-video.mp4" type="video/mp4" />
             <!-- Sorry, your browser doesn't support embedded videos. -->
@@ -820,7 +826,7 @@
                   placeholder="Name"
                   required
                 />
-                <label for="name" class="form__label"></label>
+                <!-- <label for="name" class="form__label"></label> -->
               </div>
 
               <div class="form__group">
@@ -832,7 +838,7 @@
                   placeholder="Email"
                   required
                 />
-                <label for="email"></label>
+                <!-- <label for="email"></label> -->
               </div>
 
               <div class="form__group center-element">

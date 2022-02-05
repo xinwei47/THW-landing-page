@@ -1,133 +1,135 @@
 .demo {
-    &__graph-container {
-        display: grid;
-        // grid-template-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(2, minmax(max-content, 1fr));
-        margin-top: $margin-lg;
-        &:hover .demo__graph-box:not(:hover) {
-            transform: scale(0.98);
-            transition: transform 0.4s ease;
-        }
+  &__graph-container {
+    display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(max-content, 1fr));
+    margin-top: $margin-lg;
+    // transform: translateX(10px);
 
-        @media only screen and (max-width: $bp-md) {
-            transform: scale(0.9);
-        }
-
-        @media only screen and (max-width: $bp-xs) {
-            transform: scale(0.8);
-        }
+    &:hover .demo__graph-box:not(:hover) {
+      transform: scale(0.98);
+      transition: transform 0.4s ease;
     }
 
-    &__graph-box {
-        &:hover {
-            transform: scale(1.1) translateY(1rem);
-            transition: transform 0.4s;
-            z-index: 100;
-        }
+    @media only screen and (max-width: $bp-md) {
+      transform: scale(0.9) translateX(10px);
     }
 
-    &__graph {
-        border-radius: 50%;
-        box-shadow: $box-shadow;
-        &--1 {
-            background-color: $color-primary-light1;
-            width: 30rem;
-            height: 30rem;
-            font-weight: 600;
+    @media only screen and (max-width: $bp-xs) {
+      transform: scale(0.8) translateX(10px);
+    }
+  }
 
-            @media only screen and (max-width: $bp-lg) {
-                transform: translateX(20%);
-            }
+  &__graph-box {
+    &:hover {
+      transform: scale(1.1) translateY(1rem);
+      transition: transform 0.4s;
+      z-index: 100;
+    }
+  }
 
-            @media only screen and (max-width: $bp-md) {
-                transform: translate(15%);
-            }
+  &__graph {
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+    &--1 {
+      background-color: $color-primary-light1;
+      width: 30rem;
+      height: 30rem;
+      font-weight: 600;
 
-            @media only screen and (max-width: $bp-sm) {
-                transform: translate(10%, 8%);
-            }
-        }
-        &--2 {
-            background-color: $color-primary-dark;
-            color: $color-white;
-            width: 20rem;
-            height: 20rem;
-            transform: translate(-40%, -20%);
-        }
-        &--3 {
-            background-color: $color-primary-medium;
-            color: $color-white;
-            width: 25rem;
-            height: 25rem;
+      @media only screen and (max-width: $bp-lg) {
+        transform: translateX(20%);
+      }
 
-            justify-self: end;
-            transform: translate(30%, -30%);
+      @media only screen and (max-width: $bp-md) {
+        transform: translate(15%);
+      }
 
-            @media only screen and (max-width: $bp-lg) {
-                transform: translate(45%, -35%);
-            }
+      @media only screen and (max-width: $bp-sm) {
+        transform: translate(10%, 8%);
+      }
+    }
+    &--2 {
+      background-color: $color-primary-dark;
+      color: $color-white;
+      width: 20rem;
+      height: 20rem;
+      transform: translate(-40%, -20%);
+    }
+    &--3 {
+      background-color: $color-primary-medium;
+      color: $color-white;
+      width: 25rem;
+      height: 25rem;
 
-            @media only screen and (max-width: $bp-sm) {
-                transform: translate(35%, -25%);
-            }
-        }
-        &--4 {
-            background-color: $color-primary-light2;
-            width: 35rem;
-            height: 35rem;
-            transform: translate(-15%, -60%);
-        }
+      justify-self: end;
+      transform: translate(30%, -30%);
+
+      @media only screen and (max-width: $bp-lg) {
+        transform: translate(45%, -35%);
+      }
+
+      @media only screen and (max-width: $bp-sm) {
+        transform: translate(35%, -25%);
+      }
+    }
+    &--4 {
+      background-color: $color-primary-light2;
+      width: 35rem;
+      height: 35rem;
+      transform: translate(-15%, -60%);
+    }
+  }
+
+  &__data {
+    &--occupation {
+      list-style: none;
+    }
+    &--age {
+      &--number {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+    }
+    &--continents {
+      transform: translateY(-45%);
+      margin-right: $margin-sm;
+
+      &--number {
+        line-height: 1;
+        font-size: 6.4rem;
+        font-weight: 600;
+      }
+    }
+    &--countries {
+      transform: translateY(60%);
+      &--number {
+        line-height: 1;
+        font-size: 4rem;
+        font-weight: 600;
+      }
     }
 
-    &__data {
-        &--occupation {
-            list-style: none;
-        }
-        &--age {
-            &--number {
-                font-weight: 600;
-                font-size: 2rem;
-            }
-        }
-        &--continents {
-            transform: translateY(-45%);
-            margin-right: $margin-sm;
-
-            &--number {
-                line-height: 1;
-                font-size: 6.4rem;
-                font-weight: 600;
-            }
-        }
-        &--countries {
-            transform: translateY(60%);
-            &--number {
-                line-height: 1;
-                font-size: 4rem;
-                font-weight: 600;
-            }
-        }
-
-        &--solo {
-            margin-bottom: $margin-sm;
-            transform: translateX(60%);
-            &--number {
-                font-size: 4rem;
-                line-height: 1;
-                font-weight: 700;
-            }
-        }
-
-        &--group {
-            transform: translateX(-30%);
-            &--number {
-                font-weight: 800;
-                line-height: 1;
-                font-size: 6rem;
-            }
-            &--heading {
-                width: 60%;
-            }
-        }
+    &--solo {
+      margin-bottom: $margin-sm;
+      transform: translateX(60%);
+      &--number {
+        font-size: 4rem;
+        line-height: 1;
+        font-weight: 700;
+      }
     }
+
+    &--group {
+      transform: translateX(-30%);
+      &--number {
+        font-weight: 800;
+        line-height: 1;
+        font-size: 6rem;
+      }
+      &--heading {
+        width: 60%;
+      }
+    }
+  }
 }

@@ -1,48 +1,52 @@
 .footer {
-    background-color: $color-primary-light1;
-    color: $color-secondary;
+  background-color: $color-primary-light1;
+  color: $color-secondary;
 
-    grid-column: full-start / full-end;
+  grid-column: full-start / full-end;
 
-    display: grid;
-    grid-template-rows: repeat(auto-fit, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: $grid-gap-sm;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, min-content);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: $grid-gap-sm;
 
-    padding: $padding-lg $padding-xl;
+  padding: $padding-lg $padding-xl;
 
-    &__heading {
-        margin-bottom: $margin-sm;
+  @media only screen and (max-width: $bp-xs) {
+    padding: $padding-lg $padding-md;
+  }
 
-        & + p {
-            margin-bottom: $margin-sm;
-        }
+  &__heading {
+    margin-bottom: $margin-sm;
+
+    & + p {
+      margin-bottom: $margin-sm;
+    }
+  }
+
+  &__icon {
+    margin-right: $margin-sm;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-secondary;
     }
 
-    &__icon {
-        margin-right: $margin-sm;
+    &:hover {
+      color: $color-primary-dark;
     }
-
-    &__list {
-        list-style: none;
-    }
-
-    &__item {
-        &:not(:last-of-type) {
-            margin-bottom: 5px;
-        }
-    }
-
-    &__link {
-        &,
-        &:link,
-        &:visited {
-            text-decoration: none;
-            color: $color-secondary;
-        }
-
-        &:hover {
-            color: $color-primary-dark;
-        }
-    }
+  }
 }
