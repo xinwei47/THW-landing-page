@@ -1,15 +1,8 @@
 .demo {
   &__graph-container {
     display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(2, minmax(max-content, 1fr));
     margin-top: $margin-lg;
-    // transform: translateX(10px);
-
-    &:hover .demo__graph-box:not(:hover) {
-      transform: scale(0.98);
-      transition: transform 0.4s ease;
-    }
 
     @media only screen and (max-width: $bp-md) {
       transform: scale(0.9) translateX(10px);
@@ -21,10 +14,12 @@
   }
 
   &__graph-box {
-    &:hover {
-      transform: scale(1.1) translateY(1rem);
-      transition: transform 0.4s;
-      z-index: 100;
+    @media only screen and (min-width: $bp-xs) {
+      &:hover {
+        transform: scale(1.1) translateY(1rem);
+        transition: transform 0.4s;
+        z-index: 100;
+      }
     }
   }
 
